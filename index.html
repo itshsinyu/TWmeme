@@ -28,26 +28,8 @@
 
     <!-- main -->
     <main>
-        <!-- banner 文字跑馬燈 -->
+        <!-- banner -->
         <div class="index-banner">
-            <div class="move-text">
-                <div class="line01">
-                    <span>在這個舞台上，會給你們帶來各位滿滿的大！平！台！謝謝你力量人，我的超人 歐買尬！你遜斃了！你要不要聽聽看你現在在講什麼？</span>
-                    <span>在這個舞台上，會給你們帶來各位滿滿的大！平！台！謝謝你力量人，我的超人 歐買尬！你遜斃了！你要不要聽聽看你現在在講什麼？</span>
-                </div>
-                <div class="line02">
-                   <span class="move_first">颱風天就是要泛舟啊！不然要幹嘛？你要不要吃哈密瓜？哈密瓜有一種哈味 有的人喜歡有的人不喜歡 修但幾勒 葛歌母湯哦</span>
-                   <span　class="move_last">颱風天就是要泛舟啊！不然要幹嘛？你要不要吃哈密瓜？哈密瓜有一種哈味 有的人喜歡有的人不喜歡 修但幾勒 葛歌母湯哦</span>
-                </div>
-                <p class="line03">大排長隆 出事了阿伯 完全沒有畫面 假如你生氣 假如你生氣 仰望耶穌 仰望耶穌 感恩seafood 讚嘆seafood 法喜充滿 業力引爆</p>
-                <p class="line04">穿山甲欸！嗚呼！這可以養嗎？我不敢相信咕嚕 恰恰！觸 雀食 中華路二段55號 收到！ 只有今天限定 冰冰姐～泡湯～（YA）</p>
-                <p class="line05">拿聖靈寶劍 斷開魂結！斷開鎖鏈！斷開一切的牽連！燒毀你與他之間所有的網羅 燒毀！ 然後呢？然後他就死掉了</p>
-                <p class="line06">你還敢講！我的噴火龍勒！我的尼多王勒！我的尼多王勒！剩一隻水箭龜！５等５等２０？ 你在大聲什麼啦！ 重點是...重點是...甘哇闢蘇啊</p>
-                <p class="line07">你知道這是什麼嗎？可不可以放進去一下下就好 不可以色色 都幾歲了 還那麼害羞 我看你 完全是不懂喔！ 雖然我不是數學家但這聽起來不錯對吧？</p>
-                <p class="line08">唉呦 你臉紅啦 來 聽話 讓我看看！ 李組長眉頭一皺發現事情並不單純 我們雙龍村不是大拇指就是... 一定是大拇指啦！</p>
-                <p class="line09">我們店裡沒有賣珍珠奶茶 哦你是說QQㄋㄟㄋㄟ好喝到咩噗茶 講出來 你是忘記了 還是害怕想起來？ 假的！哎呀！我眼睛業障重啊！洗勒哈囉？</p>
-                <p class="line10">三份穿褲子的豬，一盤熱空氣，一份祖母的早餐籃，把牛變成鱒魚，知道了 淡定紅茶 ˊ_>ˋ 這要我開我還真的不敢開啊</p>
-            </div>
             <!-- taiwan meme -->
             <div class="tw-icon">
                 <img src="./images/twicon.svg" alt="Taiwanicon">
@@ -58,23 +40,43 @@
                 <span class="m">迷</span>
                 <span class="e">因</span>
             </div>
+            <!-- 文字跑 -->
+            <div class="banner-loop">
+                <div class="loop-list is-bgloop">
+                    <div class="bg-line line01"></div>
+                    <div class="bg-line line02"></div>
+                    <div class="bg-line line03"></div>
+                    <div class="bg-line line04"></div>
+                    <div class="bg-line line05"></div>
+                    <div class="bg-line line06"></div>
+                    <div class="bg-line line07"></div>
+                    <div class="bg-line line08"></div>
+                    <div class="bg-line line09"></div>
+                    <div class="bg-line line10"></div>
+                </div>
+            </div>
         </div>
         
         <!-- 今晚我想來點 videos -->
-        <div class="index-swiper">
+        <div class="swiper-container">
             <h1>今晚...我想來點</h1>
-            <div class="swiper-videos">
-                <video width="560" src="./videos/大平台.mp4" controls loop title="反作用力大師吳克群"></video>
-                <video width="560" src="./videos/吳克群.mp4" controls loop title="反作用力大師吳克群"></video>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qo3H-VgXmHE" title="九天玄女" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <video width="560" src="./videos/假的_短.mp4" controls loop title="假的" ></video>
-                <video width="560" src="./videos/要打去練舞室打.mp4" controls loop title="要打去練舞室打" ></video>
+            <div class="swiper-wrapper videos">
+                <video class="swiper-slide" src="./videos/video01.mp4" controls title="大平台"></video>
+                <video class="swiper-slide" src="./videos/video02.mov" controls title="反作用力大師吳克群"></video>
+                <video class="swiper-slide" src="./videos/video03.mp4" controls title="美江"></video>
+                <video class="swiper-slide" src="./videos/video04.mp4" controls title="假的" ></video>
+                <video class="swiper-slide" src="./videos/video05.mp4" controls title="出事了阿伯" ></video>
+                <iframe class="swiper-slide" src="https://www.youtube.com/embed/qo3H-VgXmHE" title="九天玄女" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
         </div>
 
         <!-- 這裡總有一款屬於你的菜  -->
         <div class="index-allmeme">
-            <h1>這裡總有一款屬於你的菜</h1>
+            <h2>這裡總有一款屬於你的菜</h2>
             <p>我把全部都給你 不留一點餘地</p>
             <!-- 文字 & 去背圖 -->
             <div class="left-img">
@@ -86,7 +88,8 @@
                 <img src="./images/scroll/scroll_left_06.png" alt="">
             </div>
             <div class="left-text">
-                <p>我立刻爆炸，我立刻要嘶吼，我立刻要叫，我立刻要把手機拿出來拍，我要把事情鬧大</p>
+                <span>我立刻爆炸，我立刻要嘶吼，我立刻要叫，我立刻要把手機拿出來拍，我要把事情鬧大 /</span>
+                <span>我立刻爆炸，我立刻要嘶吼，我立刻要叫，我立刻要把手機拿出來拍，我要把事情鬧大</span>
             </div>
             <div class="right-img">
                 <img src="./images/scroll/scroll_right_01.png" alt="">
@@ -142,6 +145,7 @@
                     <a class="poster04" href="https://www.facebook.com/Sushiro.TW/photos/pb.100064677760877.-2207520000./1655285847993001/?type=3" target="view_window" title="鮭魚之亂_fb壽司郎"><img src="./images/poster/poster04.jpg" alt="鮭魚之亂_壽司郎"></a>
                 </div>
             </div>
+            <a class="more" href="./category.html">點我看更多</a>
         </div>
     </main>
 

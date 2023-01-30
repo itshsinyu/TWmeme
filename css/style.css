@@ -1,32 +1,18 @@
-h1{
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-h2{
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-/* ======= banner 文字跑馬燈 ======= */
+/* ======= banner 文字bg跑馬燈 ======= */
 .index-banner{
-    /* height: calc(((6px, 1vh) * 100) - 30px); */
     background-color: var(--gray-color);
     position: relative;
     margin: 20px;
     overflow: hidden;
-
 }
 .tw-icon img{
     position: absolute;
-    /* outline: 1px solid red; */
-    width: 400px;
-    /* height: auto; */
-    /* max-height: 70vh; */
-    top: 0px;
+    max-width: 400px;
+    top: 70px;
     left: calc(50% - 200px);
-    z-index: 1;
+    z-index: 2;
 }
 .font-text{
-    outline: 1px solid red;
     color: var(--white-color);
     font-size: 15rem;
     font-weight: 700;
@@ -34,147 +20,177 @@ h2{
 .t{
     position: absolute;
     top: -30px;
-    left: 20%
+    left: 20%;
+    z-index: 1;
 }
 .w{
     position: absolute;
     top: 80px;
-    right: 20%
+    right: 20%;
+    z-index: 1;
 }
 .m{
     position: absolute;
     top: 300px;
     left: -30px;
+    z-index: 1;
 }
 .e{
     position: absolute;
-    top: 400px;
+    top: 450px;
     right: -30px;
+    z-index: 1;
 }
-/* 背後文字 */
-.move-text{
-    color: var(--darkgray-color);
-    font-size: 2rem;
-    line-height: 200%;
-    width: auto;
-    /* position: absolute;
-    top: 0; 
-    left: 0; */
-    white-space: nowrap;
-    /* display: block; */
-    /* overflow: hidden; */
+
+/* 背後文字 bg loop */
+.banner-loop{
+    position: relative;
+    height: 66vh;
+    width: 100%;
+}
+.loop-list.is-bgloop{
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: column;
     justify-content: space-between;
 }
-@keyframes move{
-    0%{
-        transform: translateX(0%);
-    } 
-    100%{
-        transform: translateX(-100%);
-    }
+.loop-list.is-bgloop .bg-line {
+    animation: bgLoop 40s linear infinite;
 }
-@keyframes move-reverse{
-    0%{
-        transform: translateX(-100%);
-    } 
-    100%{
-        transform: translateX(0%);
-    }
+@keyframes bgLoop{ 0%{ background-position: 0 0; } }
+.loop-list{
+    position: absolute;
+    top: 10px;bottom: 0;left: 0;right: 0;
 }
-.line01{
-    /* outline: 1px solid red; */
-    display: inline-block;
-    animation: move 30s linear infinite;
+.bg-line{
+    opacity: 0.2;
+    /* 圖片高度除2 */
+    height: 52px;
+    margin-bottom: 10px;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
 }
-.line02{
-    outline: 1px solid blue;
-    /* animation: move 10s linear infinite; */
-    display: flex;
-    justify-content: space-between;
-    min-width: 100%;
+.bg-line.line01{background-image: url(../images/scroll/line01.png);
+    background-position: -2930px 0;
+    /* 寬度除2 */
 }
-
+.bg-line.line02{background-image: url(../images/scroll/line02.png);
+    background-position: -2710px 0;
+}
+.bg-line.line03{background-image: url(../images/scroll/line03.png);
+    background-position: -2850px 0;
+}
+.bg-line.line04{background-image: url(../images/scroll/line04.png);
+    background-position: -2710px 0;
+}
+.bg-line.line05{background-image: url(../images/scroll/line05.png);
+    background-position: -2500px 0;
+}
+.bg-line.line06{background-image: url(../images/scroll/line06.png);
+    background-position: -3100px 0;
+}
+.bg-line.line07{background-image: url(../images/scroll/line07.png);
+    background-position: -3200px 0;
+}
+.bg-line.line08{background-image: url(../images/scroll/line08.png);
+    background-position: -2550px 0;
+}
+.bg-line.line09{background-image: url(../images/scroll/line09.png);
+    background-position: -3100px 0;
+}
+.bg-line.line10{background-image: url(../images/scroll/line10.png);
+    background-position: -2700px 0;
+}
 
 /* ======= 今晚我想來點 ======= */
-.index-swiper{
+.swiper-container{
     /* outline: 1px solid green; */
     text-align: center;
     padding: 30px;
     overflow: hidden;
 }
-.index-swiper h1{
-    padding: 20px;
+.swiper-container h1{
+    margin: 20px;
+    font-size: 2rem;
+    background-color: var(--yellow-color);
+    display: inline-block;
 }
-.swiper-videos{
+.swiper-wrapper{
     display: flex;
 }
-
+.swiper-slide{
+    max-width: 400px;
+    /* height: 300px; */
+}
 
 
 /* ======= 這裡總有一款屬於你的菜 ======= */
 .index-allmeme{
-    /* outline: 1px solid pink; */
     margin: 0px auto;
     padding: 10px 0;
     text-align: center;
     /* position: relative; */
 }
-.index-allmeme h1{
-    padding: 30px;
+.index-allmeme h2{
+    margin: 30px;
+    font-size: 2rem;
+    background-color: var(--yellow-color);
+    display: inline-block;
 }
-.index-allmeme p{
-    padding: 0 0 20px;
+.index-allmeme > p{
+    padding: 0 0 40px;
+    font-size: 1.2rem;
 }
 
 /* scroll 文字 & 去背圖 */
 .left-text{
-
+    border: 1px solid var(--darkgray-color);
+    background-color: var(--gray-color);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.right-text{
+    background-color: var(--gray-color);
+    border: 1px solid var(--darkgray-color);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .left-img{
     border: 1px solid var(--darkgray-color);
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
-    flex: 0 0 auto;
-    width: 100%;
 }
 .left-img img{
     display: block;
-    /* outline: 1px solid green; */
     max-height: 200px;
     max-width: 450px;
-    width: auto;
-    height: auto;
 }
 .right-img{
     border: 1px solid var(--darkgray-color);
     overflow: hidden;
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
-    /* flex: 0 0 auto; */
-    /* width: 100%; */
 }
 .right-img img{
     display: block;
-    /* outline: 1px solid green; */
     max-height: 200px;
     max-width: 450px;
-    width: auto;
-    height: auto;
 }
 
+/* evergreen */
+.evergreen{
+    width: 100%;
+    margin: 30px 0;
+}
 
 
 /* 八點檔 gif */
 .bottom{
     /* outline: 1px solid red; */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 .bottom_gif{
     /* outline: 1px solid green; */
@@ -192,6 +208,11 @@ h2{
     background-repeat: no-repeat;
 
 }
+
+.bottom_gif a:hover{
+    transform: scale(1.2);
+    transition: .2s ease;
+}
 .bottom_gif a:not(:last-child){margin: 0px 6px 0px 0px;}
 .gif01{background-image: url(../images/drama/gif01.gif);}
 .gif02{background-image: url(../images/drama/gif02.gif);}
@@ -202,16 +223,17 @@ h2{
 
 /* poster */
 .bottom_poster{
-    border: 1px solid var(--black-color);
+    /* border: 1px solid var(--black-color); */
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin: 40px;
+    margin: 50px 0 100px;
 }
 .bottom_poster img{max-height: 350px;}
 .bottom_poster a:hover{
     z-index: 4;
     transform: scale(1.2);
+    transition: .2s ease;
 }
 .poster01{
     transform: rotate(10deg) translateY(25px);
@@ -228,4 +250,20 @@ h2{
 .poster04{
     transform: rotate(-10deg) translateY(30px);
     z-index:1;
+}
+
+.more{
+    text-decoration: none;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    padding: 0px 30px;
+    line-height: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.more:hover{
+    color: var(--white-color);
+    transform: scale(1.1);
+    transition: .2s ease;
 }

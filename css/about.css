@@ -1,0 +1,267 @@
+main{
+    text-align: center;
+}
+main h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+main p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black-color);
+}
+/* ======= 全台首家 ======= */
+.main-about{
+    /* outline: 1px solid red; */
+    margin: 20px 20px 0;
+}
+.main-about p{
+    line-height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about-item{
+    margin: 0px auto;
+    max-width: 1200px;
+    height: 120px;
+    background-color: var(--yellow-color);
+}
+.about-item h1{
+    font-size: 2.5rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+}
+/* ======= 迷因介紹 ======= */
+.main-introduce{
+    /* outline: 1px solid red; */
+    display: flex;
+    max-width: 1080px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: top;
+}
+.introduce-left{
+    flex-basis: 70%;
+    line-height: 2.4rem;
+    /* padding: 20px 0; */
+}
+.introduce-left h2{font-size: 2.4rem;}
+.introduce-left p{font-size: 1.7rem;}
+.introduce-right{
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 20px 50px;
+    background-color: var(--yellow-color);
+}
+.whocares{
+    margin: 20px 0 40px;
+}
+.whocares p:first-child{
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.whocares p:not(:first-child){
+    transform: rotate(-3deg);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 5px;
+}
+.whocares p:last-child{
+    display: inline-block;
+    background-color: var(--yellow-color);
+}
+
+/*  ======= 還想知道更多嗎？ ======= */
+.main-more{
+    /* outline: 1px solid green; */
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.main-more h2{
+    padding: 10px;
+}
+.read-list{
+    /* outline: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.read-list a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
+    /* margin: 10px; */
+    /* box-shadow: 0 0 1px var(--black-color); */
+    max-width: 220px;
+}
+.read-list a:hover{
+    border: 2px solid var(--yellow-color);
+    color: var(--yellow-color);
+    transform: scale(1.1);
+    font-weight: 700;
+    transition: .5s;
+}
+.read-list a > span{
+    /* outline: 1px solid red; */
+    border-bottom: 2px solid var(--black-color);
+    margin: 20px;
+    padding: 0 0 10px;
+    display: inline-block;
+}
+.read-list a:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.list-pic{
+    /* outline: 1px solid pink; */
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-pic img{
+    max-width: 100%;
+    margin: 10px 0;
+    object-fit: cover;
+    opacity: .8;
+}
+.list-pic p{
+    position: absolute;
+    left: .2rem;
+    top: 0rem;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: .8;
+}
+.more-btn{
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 20px; */
+}
+.more-btn a{
+    padding: 10px 15px;
+    background-color: var(--yellow-color);
+    text-decoration: none;
+    color: var(--black-color);
+    border-radius: 5px;
+}
+.more-btn a:hover{
+    color: var(--white-color);
+}
+
+/*  ======= 聯絡我 ======= */
+.main-contact{
+    background-color: var(--white-color);
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.main-contact p{
+    padding: 20px;
+}
+.form-list{
+    max-width: 800px;
+    /* outline: 1px solid blue; */
+    margin: 0 auto;
+}
+.form-list li{
+    padding: 10px 0;
+}
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+}
+/*  ======= buy me a drink ======= */
+.main-buy{
+    background-color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+}
+.buy-me{
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 50px;
+    line-height: 3rem;
+}
+.buy-me-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buy-me-inner > * {flex: 1 1 0;}
+.buy-me-inner > img{
+    /* outline: 1px solid red; */
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+.drink-select{
+    display: flex;
+    /* outline: 1px solid blue; */
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.drink-select-inner{
+    border: 1px solid var(--black-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.drink-select-inner img{
+    /* outline: 1px solid red; */
+    max-height: 100px;
+    margin-left: 10px;
+}
+.drink-select-text{
+    flex-grow: 1;
+    max-width: 350px;
+}
+.drink-select-text li{
+    border: 1px solid var(--black-color);
+    margin: 10px;
+    line-height: 1.8rem;
+}
+.drink-select-text li:hover{
+    background-color: var(--yellow-color);
+}
+.money{
+    border: 1px solid var(--black-color);
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    width: 100%;
+}
+.money p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.money p:hover{
+    color: var(--white-color);
+}
+
+/*  ======= 參考資源 ======= */
+.main-ref{
+    max-width: 1080px;
+    margin: 20px auto;
+}
+.main-ref h2 + p{
+    padding: 20px;
+}
+.main-ref p{
+    line-height: 2rem;
+}

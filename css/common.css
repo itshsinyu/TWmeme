@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --yellow-color: #FFD600;
+    --black-color: #000000;
+    --darkgray-color: #888888;
+    --gray-color:#DCDCDC;
+    --lightgray-color: #F3F3F3;
+    --white-color:#ffffff;
+}
+
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/Gridzzly-gridpaper.jpg);
+}
+/* ======== nav ======== */
+header{
+    background-color: var(--yellow-color);
+}
+.nav{
+    /* outline: 1px solid rebeccapurple; */
+    display: flex;
+    max-width: 1200px;
+    height: 70px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo img{
+    /* outline: 1px solid red; */
+    width: 150px;
+    margin: 15px;
+}
+ul.menu{
+    display: flex;
+    /* outline: 1px solid red; */
+    align-items: center;
+}
+ul.menu a{
+    /* outline: 1px solid blue; */
+    display: block;
+    width: 120px;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul.menu > li > a:hover{
+    color: var(--white-color);
+}
+
+/* ======== footer ========*/
+footer{
+    background-color: var(--yellow-color);
+    height: 100px;
+    padding: 10px 0;
+    font-weight: 400;
+}
+.footer_nav{
+    display: flex;
+    /* outline: 1px solid red; */
+    justify-content: center;
+}
+.footer_nav a{
+    /* outline: 1px solid #000000; */
+    display: block;
+    width: 130px;
+    text-align: center;
+    line-height: 200%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.footer_nav a:hover{
+    color: var(--white-color);
+}
+
+.footer_bottom{
+    /* outline: 1px solid red; */
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.footer_bottom img{
+    /* outline: 1px solid blue; */
+    width: 100px;
+}
+.footer_bottom p{
+    /* outline: 1px solid green; */
+    font-size: .6rem;
+    line-height: 120%;
+    padding: 0 0 2px 5px;
+}

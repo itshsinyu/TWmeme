@@ -1,0 +1,231 @@
+h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/* ======= banner 文字跑馬燈 ======= */
+.index-banner{
+    /* height: calc(((6px, 1vh) * 100) - 30px); */
+    background-color: var(--gray-color);
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+
+}
+.tw-icon img{
+    position: absolute;
+    /* outline: 1px solid red; */
+    width: 400px;
+    /* height: auto; */
+    /* max-height: 70vh; */
+    top: 0px;
+    left: calc(50% - 200px);
+    z-index: 1;
+}
+.font-text{
+    outline: 1px solid red;
+    color: var(--white-color);
+    font-size: 15rem;
+    font-weight: 700;
+}
+.t{
+    position: absolute;
+    top: -30px;
+    left: 20%
+}
+.w{
+    position: absolute;
+    top: 80px;
+    right: 20%
+}
+.m{
+    position: absolute;
+    top: 300px;
+    left: -30px;
+}
+.e{
+    position: absolute;
+    top: 400px;
+    right: -30px;
+}
+/* 背後文字 */
+.move-text{
+    color: var(--darkgray-color);
+    font-size: 2rem;
+    line-height: 200%;
+    width: auto;
+    /* position: absolute;
+    top: 0; 
+    left: 0; */
+    white-space: nowrap;
+    /* display: block; */
+    /* overflow: hidden; */
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0%);
+    } 
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes move-reverse{
+    0%{
+        transform: translateX(-100%);
+    } 
+    100%{
+        transform: translateX(0%);
+    }
+}
+.line01{
+    /* outline: 1px solid red; */
+    display: inline-block;
+    animation: move 30s linear infinite;
+}
+.line02{
+    outline: 1px solid blue;
+    /* animation: move 10s linear infinite; */
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+
+/* ======= 今晚我想來點 ======= */
+.index-swiper{
+    /* outline: 1px solid green; */
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+}
+.index-swiper h1{
+    padding: 20px;
+}
+.swiper-videos{
+    display: flex;
+}
+
+
+
+/* ======= 這裡總有一款屬於你的菜 ======= */
+.index-allmeme{
+    /* outline: 1px solid pink; */
+    margin: 0px auto;
+    padding: 10px 0;
+    text-align: center;
+    /* position: relative; */
+}
+.index-allmeme h1{
+    padding: 30px;
+}
+.index-allmeme p{
+    padding: 0 0 20px;
+}
+
+/* scroll 文字 & 去背圖 */
+.left-text{
+
+}
+.left-img{
+    border: 1px solid var(--darkgray-color);
+    overflow: hidden;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    width: 100%;
+}
+.left-img img{
+    display: block;
+    /* outline: 1px solid green; */
+    max-height: 200px;
+    max-width: 450px;
+    width: auto;
+    height: auto;
+}
+.right-img{
+    border: 1px solid var(--darkgray-color);
+    overflow: hidden;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* flex: 0 0 auto; */
+    /* width: 100%; */
+}
+.right-img img{
+    display: block;
+    /* outline: 1px solid green; */
+    max-height: 200px;
+    max-width: 450px;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* 八點檔 gif */
+.bottom{
+    /* outline: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bottom_gif{
+    /* outline: 1px solid green; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.bottom_gif a{
+    /* border: 1px solid var(--black-color); */
+    width: 200px;
+    height: 195px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+.bottom_gif a:not(:last-child){margin: 0px 6px 0px 0px;}
+.gif01{background-image: url(../images/drama/gif01.gif);}
+.gif02{background-image: url(../images/drama/gif02.gif);}
+.gif03{background-image: url(../images/drama/gif03.gif);}
+.gif04{background-image: url(../images/drama/gif04.gif);}
+.gif05{background-image: url(../images/drama/gif05.gif);}
+.gif06{background-image: url(../images/drama/gif06.gif);}
+
+/* poster */
+.bottom_poster{
+    border: 1px solid var(--black-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 40px;
+}
+.bottom_poster img{max-height: 350px;}
+.bottom_poster a:hover{
+    z-index: 4;
+    transform: scale(1.2);
+}
+.poster01{
+    transform: rotate(10deg) translateY(25px);
+    z-index:4;
+}
+.poster02{
+    transform: rotate(5deg);
+    z-index:3;
+}
+.poster03{
+    transform: rotate(-5deg);
+    z-index:2;
+}
+.poster04{
+    transform: rotate(-10deg) translateY(30px);
+    z-index:1;
+}

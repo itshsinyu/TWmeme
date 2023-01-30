@@ -1,0 +1,111 @@
+main{
+    /* outline: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ======= top-years ======= */
+.main-years{
+    /* outline: 1px solid red; */
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.main-years a{
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.main-years a:hover{
+    color: var(--yellow-color);
+}
+/* =======  timeline =======  */
+.timeline{
+    /* outline: 1px solid green; */
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline::before{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 100%;
+	background-color: var(--black-color);
+	left: calc(50% - 10px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-item:nth-child(odd) > h1{
+	font-size: 6rem;
+    position: absolute;
+    right: calc(20% - 30px);
+}
+.timeline-item:nth-child(even) > h1{
+	font-size: 6rem;
+    position: absolute;
+    left: calc(20% - 30px );
+}
+.content{
+    outline: 1px solid red;
+    background-color: var(--white-color);
+	padding: 30px;
+}
+.content h3{
+    font-size: 20px;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.content p{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* 我沒了 */
+.end{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 0 40px;
+}
+.end > span{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0 20px;
+}
+
+
+
+
+
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+}

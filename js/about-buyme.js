@@ -15,7 +15,7 @@ window.addEventListener( "load" , function (){
     let li01 = this.document.getElementsByClassName("list")[0];
     let li02 = this.document.getElementsByClassName("list")[1];
     let li03 = this.document.getElementsByClassName("list")[2];
-    // console.log(li01);
+    console.log(li01);
     
     s01.addEventListener("click", function(){
         // console.log("123");

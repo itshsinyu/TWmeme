@@ -9,7 +9,7 @@ ul.menu > li >a:hover{
 main{
     margin: 0 auto;
     max-width: 1080px;
-    height: 82vh;
+    min-height: 82vh;
     text-align: center;
     
     /* outline: 1px solid var(--darkgray-color); */

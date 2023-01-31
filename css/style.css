@@ -175,6 +175,9 @@
     display: flex;
     justify-content: space-between;
 }
+.right-img01{
+    margin-top: -20px;
+}
 .right-img img{
     display: block;
     max-height: 200px;

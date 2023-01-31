@@ -17,11 +17,11 @@
                 <a href="./index.html"><img src="./images/twmemelogo.png" alt=""></a>
             </div>
             <ul class="menu">
-                <li><a href="./about.html">關於本站</a></li>
-                <li><a href="./category.html">分門別類</a></li>
-                <li><a href="./history.html">經典回顧</a></li>
-                <li><a href="./test.html">迷因測驗</a></li>
-                <li><a href="./articles.html">精選專欄</a></li>
+                <li class="list"><a href="./about.html">關於本站</a></li>
+                <li class="list"><a href="./category.html">分門別類</a></li>
+                <li class="list"><a href="./history.html">經典回顧</a></li>
+                <li class="list"><a href="./test.html">迷因測驗</a></li>
+                <li class="list"><a href="./articles.html">精選專欄</a></li>
             </ul>
         </nav>
     </header>
@@ -49,6 +49,7 @@
                 <br>
                 <p>迷因（meme）概念起源於1976年，由英國演化生物學家 理察·道金斯 在《自私的基因》（The Selfish Gene）所創造的詞。融合了希臘字根 mimēma （模仿的含意），將文化傳承的過程，類比成生物學中的「基因gene」演化繁殖規則。意指迷因可透過宗教、新聞、網路爆紅事物等，能在不同的文化背景之間傳播，並在每個新的環境中進行變化......</p>
             </div>
+            <div class="mask"></div>
         </section>
         <div class="whocares">
             <p>打這麼多誰看得完啊</p><br>
@@ -99,8 +100,8 @@
             <p>不論是找不到心中所愛或是有話想說，歡迎捎信告訴我，也可以順便告訴我今天海是什麼顏色</p>
             <form action="">
                 <ul class="form-list">
-                    <li><input type="text" placeholder="稱呼"></li>
-                    <li><input type="text" placeholder="信箱"></li>
+                    <li><input type="text" placeholder="你的名字"></li>
+                    <li><input type="email" placeholder="給我你的信箱"></li>
                     <li><textarea placeholder="想說的話..."></textarea></li>
                 </ul>
                 <button type="submit">立刻大聲說</button>
@@ -112,19 +113,24 @@
                 <h2>Buy Me a Drink</h2>
                 <p>謝謝叔叔阿姨...我不想努力了</p>
                 <div class="buy-me-inner">
-                    <img src="./images/buyme.jpg">
+                    <img src="./images/buyme3.jpg" class="img01">
+                    <img src="./images/buyme.jpg" class="img02 hide">
+                    <img src="./images/buyme2.jpg" class="img03 hide">
                     <div class="drink-select">
                         <div class="drink-select-inner">
                             <img src="./images/sparkling-water.png">
                             <p>X</p>
                             <ul class="drink-select-text">
-                                <li>熟悉的麥香 最對味</li>
-                                <li>可不可以紅茶加白玉珍珠</li>
-                                <li>好了啦！好了啦！超大杯</li>
+                                <li id="select-01" class="list bg-yellow">熟悉的麥香 最對味</li>
+                                <li id="select-02" class="list">可不可以紅茶加白玉珍珠</li>
+                                <li id="select-03" class="list">好了啦！好了啦！超大杯</li>
                             </ul>
                         </div>
                         <div class="money">
-                            <p>請支援收銀 $ 10</p>
+                            <span>支援收銀 $ </span>
+                            <span class="money-c">10</span>
+                            <span class="money-c hide">80</span>
+                            <span class="money-c hide">200</span>
                         </div>
                     </div>
                 </div>
@@ -270,5 +276,6 @@
             <br>本網站為緯育 TibaMe 前端工程師班第 82 期學員專題作品，本平台僅供學習、展示之用</p>
         </div>
     </footer>
+    <script src="./js/about-buyme.js"></script>
 </body>
 </html>

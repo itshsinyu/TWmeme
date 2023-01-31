@@ -103,32 +103,23 @@
 }
 
 /* ======= 今晚我想來點 ======= */
-/* .swiper-container{
-    outline: 1px solid green;
+.swiper{
+    /* outline: 1px solid green; */
     text-align: center;
     padding: 30px;
     overflow: hidden;
 }
-.swiper-container h1{
+.swiper h1{
     margin: 20px;
     font-size: 2rem;
     background-color: var(--yellow-color);
     display: inline-block;
 }
-.swiper-wrapper{
-    display: flex;
-}
-.swiper-slide{
-    max-width: 400px;
-    height: 300px;
-} */
-.swiper-slide{
-    width:400px;/*根据内容调整宽度*/
-}
 .swiper-slide video{
     width: 100%;
     height: auto;
 }
+
 /* ======= 這裡總有一款屬於你的菜 ======= */
 .index-allmeme{
     margin: 0px auto;
@@ -175,13 +166,16 @@
     max-width: 450px;
 }
 .right-img{
-    border-bottom: 1px solid var(--darkgray-color);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
 .right-img01{
     margin-top: -20px;
+    border-bottom: 1px solid var(--darkgray-color);
+}
+.right-img02{
+    border: 1px solid var(--darkgray-color);
 }
 .right-img img{
     display: block;
@@ -220,10 +214,11 @@
 }
 
 .bottom_gif a:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(2deg);
     transition: .2s ease;
+    
 }
-.bottom_gif a:not(:last-child){margin: 0px 6px 0px 0px;}
+.bottom_gif a:not(:last-child){margin: 0px 10px 0px 0px;}
 .gif01{background-image: url(../images/drama/gif01.gif);}
 .gif02{background-image: url(../images/drama/gif02.gif);}
 .gif03{background-image: url(../images/drama/gif03.gif);}

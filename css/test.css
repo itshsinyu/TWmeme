@@ -1,3 +1,11 @@
+ul.menu > li:nth-child(4) a{
+    color: var(--white-color);
+}
+ul.menu > li >a:hover{
+    color: var(--white-color);
+}
+
+
 main{
     margin: 0 auto;
     max-width: 1080px;

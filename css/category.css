@@ -1,3 +1,11 @@
+ul.menu > li:nth-child(2) a{
+    color: var(--white-color);
+}
+ul.menu > li >a:hover{
+    color: var(--white-color);
+}
+
+
 main{
     max-width: 1080px;
     margin: 0 auto;
@@ -18,7 +26,7 @@ main{
     width: 100%;
 }
 input:checked + .tags > label > span{   
-    border-bottom: 2px solid var(--yellow-color);
+    border-bottom: 3px solid var(--yellow-color);
 }
 input{
     display: none;
@@ -32,7 +40,7 @@ input{
 }
 .tags span:hover{
     color: var(--yellow-color);
-    border-bottom: 2px solid var(--yellow-color);
+    border-bottom: 3px solid var(--yellow-color);
 }
 
 /* ======= main-cards ======= */
@@ -41,6 +49,7 @@ input{
     max-width: 100%;
     padding: 20px;
     position: relative;
+    border-radius: 20px;
 }
 .triangle{
 	border-top: 80px solid var(--yellow-color);
@@ -73,10 +82,11 @@ input{
     margin: 20px;
     height: 200px;
     justify-self: start;
+    border-radius: 20px;
 }
 .page li:hover{
     box-shadow: 2px 2px 2px var(--black-color);
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: .2s ease;
 }
 .page a{

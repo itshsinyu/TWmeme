@@ -1,33 +1,44 @@
-/* ======== 精選影音 ========  */
+ul.menu > li:last-child a{
+    color: var(--white-color);
+}
+ul.menu > li >a:hover{
+    color: var(--white-color);
+}
 main{
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
 }
-.videos h1{
+main h1, h2{
     font-size: 2rem;
     padding: 20px;
+    /* outline: 1px solid red; */
+    text-align: center;
 }
+main h1::before,h1::after, h2::before,h2::after{
+    content: " ▬ ";
+    color: var(--yellow-color);
+}
+/* ======== 精選影音 ========  */
 .video-list{
     max-width: 900px;
     margin: 0 auto;
-    outline: 1px solid red;
-    display: flex;
-    padding: 10px;
+    /* outline: 1px solid red; */
+
 }
-video{
-    max-width: 300px;
+/* 暫時放假ㄉ */
+.video-list img{
+    width: 100%;
+}
+/* video{
+    max-width: 500px;
     height: auto;
+} */
+.video-item1{
+
 }
-
-
-
-
-
 
 /* ======== 精選好文 ========  */
 .main-articles{
-    font-size: 2rem;
-    padding: 20px;
 }
 /* 1-6 */
 .articles-list-top{
@@ -86,7 +97,7 @@ video{
     position: absolute;
     left: .2rem;
     top: 0rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     opacity: .8;
 }

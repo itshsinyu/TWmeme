@@ -1,3 +1,11 @@
+ul.menu > li:nth-child(3) a{
+    color: var(--white-color);
+}
+ul.menu > li >a:hover{
+    color: var(--white-color);
+}
+
+
 main{
     /* outline: 1px solid red; */
     max-width: 1200px;
@@ -74,11 +82,11 @@ main{
     align-items: top;
 }
 .timeline-item:nth-child(even) > .content{
-    outline: 1px solid red;
+    /* outline: 1px solid var(--yellow-color); */
     justify-content: start;
 }
 .timeline-item:nth-child(odd) > .content{
-    outline: 1px solid var(--black-color);
+    /* outline: 1px solid var(--black-color); */
     justify-content: end;
 }
 .content img{

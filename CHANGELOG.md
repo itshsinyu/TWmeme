@@ -1,7 +1,11 @@
 # TWmeme
+0.0.4 (2023.01.31)
+#修改
+- 修改index.css border-bottom
+
 0.0.3 (2023.01.31)
 #修改
-- .right-img01{margin-top:20px;}
+- 修改index.css .right-img01{margin-top:20px;}
 
 0.0.2 (2023.01.31)
 #新增

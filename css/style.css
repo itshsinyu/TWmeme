@@ -170,7 +170,7 @@
     max-width: 450px;
 }
 .right-img{
-    border: 1px solid var(--darkgray-color);
+    border-bottom: 1px solid var(--darkgray-color);
     overflow: hidden;
     display: flex;
     justify-content: space-between;

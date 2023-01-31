@@ -32,6 +32,7 @@ main{
 	flex-wrap: wrap;
 	position: relative;
 }
+/* line */
 .timeline::before{
 	content: '';
 	position: absolute;
@@ -40,10 +41,12 @@ main{
 	background-color: var(--black-color);
 	left: calc(50% - 10px);
 }
+/* items odd even*/
 .timeline-item{
 	margin-bottom: 40px;
 	width: 100%;
 	position: relative;
+    padding-top: 30px;
 }
 .timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
@@ -61,23 +64,30 @@ main{
     position: absolute;
     left: calc(20% - 30px );
 }
+/* content */
 .content{
+    /* outline: 1px solid red; */
+    /* background-color: var(--white-color); */
+	padding: 0 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: top;
+}
+.timeline-item:nth-child(even) > .content{
     outline: 1px solid red;
-    background-color: var(--white-color);
-	padding: 30px;
+    justify-content: start;
 }
-.content h3{
-    font-size: 20px;
-	margin:0 0 10px;
-	text-transform: capitalize;
-	font-weight: 500;
+.timeline-item:nth-child(odd) > .content{
+    outline: 1px solid var(--black-color);
+    justify-content: end;
 }
-.content p{
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 22px;
+.content img{
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
 }
-
 /* 我沒了 */
 .end{
     text-align: center;

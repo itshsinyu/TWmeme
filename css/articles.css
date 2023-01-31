@@ -4,10 +4,29 @@ main{
     margin: 0 auto;
     text-align: center;
 }
+.videos h1{
+    font-size: 2rem;
+    padding: 20px;
+}
+.video-list{
+    max-width: 900px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    display: flex;
+    padding: 40px;
+}
+
+
+
+
+
 
 
 /* ======== 精選好文 ========  */
-
+.main-articles{
+    font-size: 2rem;
+    padding: 20px;
+}
 /* 1-6 */
 .articles-list-top{
     display: flex;

@@ -166,6 +166,11 @@ main p{
     margin: 20px auto;
     padding: 20px;
 }
+.main-contact h2{
+    display: inline-block;
+    background-color: var(--yellow-color);
+    padding: 2px 20px;
+}
 .main-contact p{
     padding: 20px;
 }
@@ -179,10 +184,23 @@ main p{
 }
 input{
     width: 100%;
+    font-size: 1rem;
 }
 textarea{
     width: 100%;
     height: 150px;
+    font-size: 1rem;
+}
+button{
+    background-color: var(--yellow-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+button:hover{
+    color: var(--white-color);
+    box-shadow: 2px 2px 2px var(--black-color);
+    cursor: pointer;
 }
 /*  ======= buy me a drink ======= */
 .main-buy{
@@ -258,10 +276,69 @@ textarea{
 .main-ref{
     max-width: 1080px;
     margin: 20px auto;
+    outline: 1px solid red;
 }
 .main-ref h2 + p{
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 .main-ref p{
     line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    justify-content: start;
+}
+/* left */
+.ref-left{
+    padding: 30px 40px;
+}
+.ref-left h3{
+    font-size: 3rem;
+}
+.ref-left p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+/* right */
+.ref-right{
+    padding: 30px 10px 0px;
+    display: flex;
+}
+/* text */
+.list-text{
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+.list-text > li{
+    list-style-type: square;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.list-text a{
+    color: var(--black-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--black-color);
+}
+.list-text a:hover{
+    color: var(--yellow-color);
+    border-bottom: 2px solid var(--yellow-color);
+}
+/* images */
+.list-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-img img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--black-color);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.list-img img:hover{
+    box-shadow: 2px 2px 5px var(--black-color);
 }

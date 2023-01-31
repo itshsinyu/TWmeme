@@ -2,7 +2,6 @@
 main{
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 .videos h1{
     font-size: 2rem;
@@ -13,9 +12,12 @@ main{
     margin: 0 auto;
     outline: 1px solid red;
     display: flex;
-    padding: 40px;
+    padding: 10px;
 }
-
+video{
+    max-width: 300px;
+    height: auto;
+}
 
 
 

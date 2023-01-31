@@ -103,8 +103,8 @@
 }
 
 /* ======= 今晚我想來點 ======= */
-.swiper-container{
-    /* outline: 1px solid green; */
+/* .swiper-container{
+    outline: 1px solid green;
     text-align: center;
     padding: 30px;
     overflow: hidden;
@@ -120,10 +120,15 @@
 }
 .swiper-slide{
     max-width: 400px;
-    /* height: 300px; */
+    height: 300px;
+} */
+.swiper-slide{
+    width:400px;/*根据内容调整宽度*/
 }
-
-
+.swiper-slide video{
+    width: 100%;
+    height: auto;
+}
 /* ======= 這裡總有一款屬於你的菜 ======= */
 .index-allmeme{
     margin: 0px auto;

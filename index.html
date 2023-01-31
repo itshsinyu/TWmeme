@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"> 
 </head>
 <body>
     <header>
@@ -58,15 +59,20 @@
         </div>
         
         <!-- 今晚我想來點 videos -->
-        <div class="swiper-container">
+        <div class="swiper">
             <h1>今晚...我想來點</h1>
             <div class="swiper-wrapper videos">
-                <video class="swiper-slide" src="./videos/video01.mp4" controls title="大平台"></video>
-                <video class="swiper-slide" src="./videos/video02.mov" controls title="反作用力大師吳克群"></video>
-                <video class="swiper-slide" src="./videos/video03.mp4" controls title="美江"></video>
-                <video class="swiper-slide" src="./videos/video04.mp4" controls title="假的" ></video>
-                <video class="swiper-slide" src="./videos/video05.mp4" controls title="出事了阿伯" ></video>
-                <iframe class="swiper-slide" src="https://www.youtube.com/embed/qo3H-VgXmHE" title="九天玄女" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <!-- <div class="swiper-slide"><img src="./images/buyme.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/buyme.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/buyme.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/buyme.jpg" alt=""></div> -->
+
+                <div class="swiper-slide"><video src="./videos/video01.mp4" controls title="大平台"></video></div> 
+                <div class="swiper-slide"><video src="./videos/video02.mov" controls title="反作用力大師吳克群"></video></div> 
+                <div class="swiper-slide"><video src="./videos/video03.mp4" controls title="美江"></video></div> 
+                <div class="swiper-slide"><video src="./videos/video04.mp4" controls title="假的" ></video></div> 
+                <div class="swiper-slide"><video src="./videos/video05.mp4" controls title="出事了阿伯" ></video></div> 
+                <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/qo3H-VgXmHE" title="九天玄女" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -165,5 +171,22 @@
             <br>本網站為緯育 TibaMe 前端工程師班第 82 期學員專題作品，本平台僅供學習、展示之用</p>
         </div>
     </footer>
+
+    <!-- script CDN -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
+    <script>        
+        let mySwiper = new Swiper ('.swiper', {
+        slidesPerView : 3,
+        spaceBetween: 10,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+            },
+        })        
+    </script>
 </body>
 </html>

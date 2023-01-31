@@ -38,15 +38,16 @@
                 </div>
                 <!-- 選項 -->
                 <ul class="options">
-                    <input type="radio" name="options" id="opt01">
-                    <li><label for="opt01">大齡女子</label></li>
-                    <input type="radio" name="options" id="opt02">
-                    <li><label for="opt02">歌聲動人</label></li>
-                    <input type="radio" name="options" id="opt03">
-                    <li><label for="opt03">才貌雙全</label></li>
+                    <li><span class="opt-01">大齡女子</span></li>
+                    <li><span class="opt-01">歌聲動人</span></li>
+                    <li><span class="opt-01">才貌雙全</span></li>
                 </ul>
+                <!-- checked image -->
+                <div class="checked hide">
+                    <img src="./images/test/checked01.png" alt="right">
+                </div>
                 <!-- 出處 -->
-                <div class="from">
+                <div class="from hide">
                     <div class="triangle"></div>
                     <div class="triangle2"></div>
                     <h2><a href="https://www.dcard.tw/f/girl/p/238949839" target="view_window">出處：Dcard文章《30就是大齡剩女？？ 彭佳慧們都給我進來》</a></h2>
@@ -54,13 +55,13 @@
                 </div>
                 <!-- 下方按鈕 進度 -->
                 <div class="bottom">
-                    <a href="" class="prev">上一題</a>
+                    <span href=""> </span>
                     <p>01 / 10</p>
-                    <a href="" class="next">下一題</a>
+                    <span id="next-01">下一題</span>
                 </div>
             </div>
             <!-- q10 -->
-            <div class="test q10 hide" id="q01">
+            <div class="test q10 hide" id="q10">
                 <h1>#10.「假的！ 哎呀！我眼睛業障重啊！」<br>
                     出自哪位法師勸妻子看開丈夫外遇</h1>
                 <div class="pic">
@@ -69,15 +70,16 @@
                 </div>
                 <!-- 選項 -->
                 <ul class="options">
-                    <input type="radio" name="options" id="opt01">
-                    <li><label for="opt01">淨空法師</label></li>
-                    <input type="radio" name="options" id="opt02">
-                    <li><label for="opt02">聖嚴法師</label></li>
-                    <input type="radio" name="options" id="opt03">
-                    <li><label for="opt03">海濤法師</label></li>
+                    <li><span class="opt-10">淨空法師</span></li>
+                    <li><span class="opt-10">聖嚴法師</span></li>
+                    <li><span class="opt-10">海濤法師</span></li>
                 </ul>
+                <!-- checked image -->
+                <div class="checked hide">
+                    <img src="./images/test/checked10.png" alt="right">
+                </div>
                 <!-- 出處 -->
-                <div class="from">
+                <div class="from hide">
                     <div class="triangle"></div>
                     <div class="triangle2"></div>
                     <h2><a href="https://www.youtube.com/watch?v=xVNkFREcngE" target="view_window">出處：海濤法師-教您如何面對丈夫外遇</a></h2>
@@ -85,17 +87,21 @@
                 </div>
                 <!-- 下方按鈕 進度 -->
                 <div class="bottom">
-                    <a href="" class="prev">上一題</a>
-                    <p>10 / 10</p>
-                    <a href="" class="next">看結果</a>
+                    <span href="" id="prev-10">上一題</span>
+                    <p>01 / 10</p>
+                    <span id="next-10">看結果</span>
                 </div>
             </div>
         </section>
-        <section class="main-result hide">
+        <section class="main-result hide" id="result">
             <h1>測驗結果</h1>
             <div class="container">
+                <!-- 暫時的假圖 -->
+                <div class="temp">
+                    <img src="./images/test/temp-result.png" alt="">
+                </div>
                 <!-- top -->
-                <div class="top">
+                <!-- <div class="top">
                     <div class="top-left">
                         <h2>迷因成癮指數</h2>
                         <div class="scores">
@@ -107,14 +113,26 @@
                         <p>把這些時間拿去讀書的話，早就哈佛或耶魯了吧</p>
                         <img src="./images/test/result01.png" alt="">
                     </div>
-                </div>
+                </div> -->
                 <!-- bottom -->
-                <div class="bottom">
+                <!-- <div class="bottom">
                     <div class="bottom-left">
                         <h2>成績單</h2>
                         
                     </div>
                     <img src="./images/test/result-pic01.jpg" alt="">
+                </div> -->
+            </div>
+            <div class="icons">
+                <div class="main-icons">
+                    <a href=""><img src="./images/test/icon-download.png" alt="download"></a>
+                    <div class="again"><a href="" class="again">再玩一次</a></div>
+                    <img src="./images/test/icon-share.png" alt="share" class="share">
+                </div>
+                <div class="social hide" id="social">
+                    <a href=""><img src="./images/test/icon-ig.png" alt="ig"></a>
+                    <a href=""><img src="./images/test/icon-line.png" alt="line"></a>
+                    <a href=""><img src="./images/test/icon-fb.png" alt="fb"></a>
                 </div>
             </div>
         </section>
@@ -136,5 +154,6 @@
             <br>本網站為緯育 TibaMe 前端工程師班第 82 期學員專題作品，本平台僅供學習、展示之用</p>
         </div>
     </footer>
+    <script src="./js/test.js"></script>
 </body>
 </html>

@@ -82,11 +82,11 @@ main{
     align-items: top;
 }
 .timeline-item:nth-child(even) > .content{
-    /* outline: 1px solid var(--yellow-color); */
+    outline: 1px solid var(--yellow-color);
     justify-content: start;
 }
 .timeline-item:nth-child(odd) > .content{
-    /* outline: 1px solid var(--black-color); */
+    outline: 1px solid var(--black-color);
     justify-content: end;
 }
 .content img{
@@ -96,7 +96,8 @@ main{
     object-fit: cover;
     padding: 10px;
 }
-/* 我沒了 */
+
+/* end 我沒了 */
 .end{
     text-align: center;
     font-size: 1rem;

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .bg{
+        display: flex;
+        /*   justify-content:flex-start; */
+        overflow: hidden;
+        background: #999;
+        margin: 5px 20px;
+        border: 1px solid blue;
+        }
+        p{
+        /*   outline: 1px solid red; */
+        white-space: nowrap;
+        padding: 0 10px;
+        /*   animation: move 10s linear infinite both; */
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        /*   animation-fill-mode: forward; */
+        /*   animation-direction: alternate; */
+        border: 1px solid yellow;
+        }
+
+        @keyframes move {
+        0% {transform: translate(0, 0);}
+        100% {transform: translate(-100%, 0);}
+        }
+    </style>
+</head>
+<body> 
+  <div class="bg line01">
+    <p>颱風天就是要泛舟啊！不然要幹嘛 你要不要吃哈密瓜 哈密瓜有一種哈味 出事了阿伯 修但幾勒 </p>
+    <p>颱風天就是要泛舟啊！不然要幹嘛 你要不要吃哈密瓜 哈密瓜有一種哈味 出事了阿伯 修但幾勒 </p>
+    <p>颱風天就是要泛舟啊！不然要幹嘛 你要不要吃哈密瓜 哈密瓜有一種哈味 出事了阿伯 修但幾勒 </p>
+  </div>
+<!--   <div class="bg line02">
+      <p>在這個舞台上，會給你們帶來各位滿滿的大！平！台！謝謝你力量人，我的超人 噢買尬！你遜斃了！！</p>
+      <p>在這個舞台上，會給你們帶來各位滿滿的大！平！台！謝謝你力量人，我的超人 噢買尬！你遜斃了！！</p>
+      <p>在這個舞台上，會給你們帶來各位滿滿的大！平！台！謝謝你力量人，我的超人 噢買尬！你遜斃了！！</p>
+  </div> -->
+  <script>
+    let first_p = document.getElementsByTagName("p")[0];
+    console.log(first_p);
+    first_p.addEventListener("animationiteration", function(){
+    console.log("ddddd");
+    });
+  </script>
+</body>
+</html>

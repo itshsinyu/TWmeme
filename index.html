@@ -80,7 +80,7 @@
             <h2>這裡總有一款屬於你的菜</h2>
             <p>我把全部都給你 不留一點餘地</p>
             <!-- 文字 & 去背圖 -->
-            <div class="left-img">
+            <div class="left-img" id="left-img-01">
                 <img src="./images/scroll/scroll_left_01.png" alt="">
                 <img src="./images/scroll/scroll_left_02.png" alt="">
                 <img src="./images/scroll/scroll_left_03.png" alt="">
@@ -177,6 +177,7 @@
 
     <!-- script CDN -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
+    <script src="./js/index-scroll.js"></script>
     <script>        
         let mySwiper = new Swiper ('.swiper', {
         slidesPerView : 3,
@@ -188,7 +189,7 @@
         pagination: {
         el: '.swiper-pagination',
         clickable: true,
-            },
+        },
         })        
     </script>
 </body>

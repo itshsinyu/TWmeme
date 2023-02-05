@@ -20,15 +20,15 @@ main p{
 /* ======= 全台首家 ======= */
 .main-about{
     /* outline: 1px solid red; */
-    margin: 20px 20px 0;
+    margin: 30px auto;
 }
 .main-about p{
-    line-height: 3.5rem;
+    line-height: 3.6rem;
     font-size: 1.2rem;
     font-weight: 400;
 }
 .about-item{
-    margin: 0px auto;
+    margin: 20px auto;
     max-width: 1200px;
     height: 120px;
     background-color: var(--yellow-color);
@@ -43,7 +43,7 @@ main p{
     /* outline: 1px solid red; */
     display: flex;
     max-width: 1080px;
-    margin: 10px auto;
+    margin: 20px auto;
     justify-content: center;
     align-items: top;
     position: relative;
@@ -51,26 +51,25 @@ main p{
 .introduce-left{
     flex-basis: 70%;
     line-height: 2.4rem;
-    /* padding: 20px 0; */
 }
 .introduce-left h2{font-size: 2.4rem;}
 .introduce-left p{font-size: 1.7rem;}
 .introduce-right{
     text-align: left;
-    line-height: 1.7rem;
-    padding: 20px 50px;
+    line-height: 2rem;
+    padding: 30px 50px;
     background-color: var(--yellow-color);
 }
 .mask{
     position: absolute;
     right: 0;
     width: 850px;
-    height: 200px;
-    background-image: linear-gradient(to top, var(--yellow-color), #ffff0000);
+    height: 230px;
+    background-image: linear-gradient(to top, var(--yellow-color) -15%, #ffff0000);
 }
 
 .whocares{
-    margin: 20px 0 40px;
+    margin: 20px 0 80px;
 }
 .whocares p:first-child{
     padding: 10px;
@@ -81,7 +80,7 @@ main p{
     transform: rotate(-3deg);
     font-size: 2.2rem;
     font-weight: 700;
-    margin: 5px;
+    margin: 15px;
 }
 .whocares p:last-child{
     display: inline-block;
@@ -95,7 +94,7 @@ main p{
     margin: 0 auto;
 }
 .main-more h2{
-    padding: 10px;
+    padding: 30px;
 }
 .read-list{
     /* outline: 1px solid red; */
@@ -105,6 +104,7 @@ main p{
     align-items: center;
     flex-wrap: wrap;
     padding: 30px 0;
+    margin: 20px 0;
 }
 .read-list a{
     text-decoration: none;
@@ -165,20 +165,24 @@ main p{
 }
 .more-btn a{
     padding: 10px 15px;
+    font-weight: 500;
     background-color: var(--yellow-color);
     text-decoration: none;
     color: var(--black-color);
     border-radius: 5px;
+    border: 1px solid var(--black-color);
 }
 .more-btn a:hover{
     color: var(--white-color);
+    box-shadow: 1px 1px 5px var(--black-color);
+    cursor: pointer;
 }
 
 /*  ======= 聯絡我 ======= */
 .main-contact{
     background-color: var(--white-color);
     max-width: 1080px;
-    margin: 20px auto;
+    margin: 80px auto;
     padding: 20px;
     box-shadow: 5px 5px 5px var(--gray-color);
 }
@@ -214,19 +218,21 @@ textarea{
 }
 
 button{
+    padding: 10px 15px;
+    font-weight: 500;
     background-color: var(--yellow-color);
+    color: var(--black-color);
     border-radius: 5px;
-    font-size: 1.2rem;
-    padding: 0 20px;
+    border: 1px solid var(--black-color);
 }
 button:hover{
     color: var(--white-color);
-    box-shadow: 2px 2px 2px var(--black-color);
+    box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
 }
 /*  ======= buy me a drink ======= */
 .main-buy{
-    margin: 50px 0;
+    margin: 80px 0;
     background-color: var(--yellow-color);
     border: 1px solid var(--yellow-color);
 }
@@ -277,16 +283,22 @@ button:hover{
     border: 1px solid var(--black-color);
     margin: 10px;
     line-height: 1.8rem;
+    padding: 3px 0px;
+    font-weight: 500;
+    border-radius: 5px;
 }
 .drink-select-text li:hover{
     background-color: var(--yellow-color);
     cursor: pointer;
+    box-shadow: 1px 1px 5px var(--black-color);
+    color: var(--white-color);
 }
 .money{
     border: 1px solid var(--black-color);
     background-color: var(--yellow-color);
     color: var(--black-color);
     width: 100%;
+    border-radius: 5px;
 }
 .money span{
     font-size: 1.2rem;
@@ -295,6 +307,7 @@ button:hover{
 .money:hover{
     color: var(--white-color);
     cursor: pointer;
+    box-shadow: 1px 1px 5px var(--black-color);
 }
 .bg-yellow{
     background-color: var(--yellow-color);
@@ -306,15 +319,20 @@ button:hover{
 /*  ======= 參考資源 ======= */
 .main-ref{
     max-width: 1080px;
-    margin: 20px auto;
+    margin: 90px auto;
     /* outline: 1px solid red; */
+}
+.main-ref h2{
+    display: inline-block;
+    background-color: var(--yellow-color);
+    padding: 2px 20px;
 }
 .main-ref h2 + p{
     padding: 20px 20px 0;
 }
 .main-ref p{
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 .container{
@@ -372,4 +390,5 @@ button:hover{
 }
 .list-img img:hover{
     box-shadow: 2px 2px 5px var(--black-color);
+    border: 1px solid var(--yellow-color);
 }

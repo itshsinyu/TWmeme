@@ -33,18 +33,19 @@ main{
 
 /*  ======== main-article ========  */
 .main-article{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .top-article{
     max-width: 1080px;
     margin: 0 auto;
     background-color: var(--yellow-color);
-    padding: 50px;
+    padding: 30px;
     position: relative;
 }
 .item-top h1{
     font-size: 3rem;
     margin: 10px 0;
+    padding-left: 30px;
 }
 
 /*  author */
@@ -53,11 +54,13 @@ main{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    padding-left: 30px;
 }
 .author p{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .author > img{
+    padding-left: 10px;
     display: block;
     width: 50px;
     height: 50px;
@@ -69,17 +72,31 @@ main{
 }
 /* item-container */
 .item-container{
-    line-height: 1.2rem;
     background-color: var(--white-color);
-    margin: 10px 0;
+    margin: 20px 0;
     position: relative;
 }
 .up{
     position: relative;
     top: -100px;
 }
+/* 內文 */
 .item-p{
     padding-top: 100px;
+    line-height: 2rem;
+}
+.item-p h2{
+    display: inline;
+    border-bottom: 5px solid var(--yellow-color);
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+.item-p span{
+    display: inline-block;
+    background-color: var(--yellow-color);
+    padding: 0 20px;
+    font-weight: 500;
+    margin: 5px 0;
 }
 .item-p p{
     padding: 30px;
@@ -89,7 +106,7 @@ main{
     color: var(--darkgray-color);
 }
 .item-img img{
-    max-height: 300px;
+    max-height: 400px;
     float: right;
 }
 

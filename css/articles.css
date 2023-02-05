@@ -6,7 +6,7 @@ ul.menu > li >a:hover{
 }
 main{
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 main h1, h2{
     font-size: 2rem;
@@ -21,7 +21,7 @@ main h1::before,h1::after, h2::before,h2::after{
 /* ======== 精選影音 ========  */
 .video-list{
     max-width: 900px;
-    margin: 0 auto;
+    margin: 10px auto;
     /* outline: 1px solid red; */
 
 }

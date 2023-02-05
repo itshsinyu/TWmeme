@@ -15,10 +15,10 @@ window.addEventListener( "load" , function (){
     let li01 = this.document.getElementsByClassName("list")[0];
     let li02 = this.document.getElementsByClassName("list")[1];
     let li03 = this.document.getElementsByClassName("list")[2];
-    console.log(li01);
+    // console.log(li01);
     
     s01.addEventListener("click", function(){
-        // console.log("123");
+        // console.log("click");
         img01.classList.remove("hide");
         img02.classList.add("hide");
         img03.classList.add("hide");

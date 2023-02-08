@@ -37,8 +37,8 @@ window.addEventListener( "load" , function (){
     });
     // after偽元素
     // let playing = window.getComputedStyle(a,'::after');
-    let playing = document.getElementsByClassName("playing")[0];
-    playing.addEventListener("click", function(){
+    let playicon = document.getElementsByClassName("playicon")[0];
+    playicon.addEventListener("click", function(){
         console.log('123');
         playingvid.classList.remove("hide");
         container.classList.add("hide");

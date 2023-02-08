@@ -171,7 +171,9 @@
     /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
-    width: 105vw;
+    width: 110vw;
+    position: relative;
+    left: -100px;
 }
 .left-img img{
     display: block;
@@ -206,12 +208,11 @@
     background-color: gray;
 }
 .transleft{
-    transform: translateX(-100px);
-    /* animation: moveL; */
+    transform: translateX(-30px);
     transition: 3s;
 }
 .transright{
-    transform: translateX(100px);
+    transform: translateX(20px);
     transition: 3s;
 }
 

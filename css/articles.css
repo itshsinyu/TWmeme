@@ -24,8 +24,7 @@ main h1::before,h1::after, h2::before,h2::after{
     margin: 10px auto;
     display: flex;
 }
-.active::after{
-    content: "";
+.playicon{
     position: absolute;
     left: 50%;
     top: 40%;

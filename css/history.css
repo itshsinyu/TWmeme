@@ -84,6 +84,7 @@ main{
 .timeline-item:nth-child(even) > .content{
     outline: 1px solid var(--yellow-color);
     justify-content: start;
+    line-height: 2rem;
 }
 .timeline-item:nth-child(odd) > .content{
     outline: 1px solid var(--black-color);

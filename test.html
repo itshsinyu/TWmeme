@@ -7,6 +7,7 @@
     <title>台灣迷因圖鑑 Taiwan Meme</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_RWD.css">
     <link rel="stylesheet" href="./css/test.css">
 </head>
 <body>
@@ -23,6 +24,15 @@
                 <li><a href="./test.html">迷因測驗</a></li>
                 <li><a href="./articles.html">精選專欄</a></li>
             </ul>
+            <!-- 漢堡線 -->
+            <button class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+                <svg viewBox="0 0 100 100" width="40">
+                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+                </svg>
+            </button>
+        </nav>
         </nav>
     </header>
 
@@ -155,5 +165,6 @@
         </div>
     </footer>
     <script src="./js/test.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

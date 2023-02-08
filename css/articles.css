@@ -36,6 +36,9 @@ main h1::before,h1::after, h2::before,h2::after{
 .video-item1{
 
 }
+.hide{
+    display: none;
+}
 
 /* ======== 精選好文 ========  */
 .main-articles{

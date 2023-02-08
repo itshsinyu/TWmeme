@@ -7,6 +7,7 @@
     <title>台灣迷因圖鑑 Taiwan Meme</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_RWD.css">
     <link rel="stylesheet" href="./css/articles.css">
 </head>
 <body>
@@ -23,6 +24,14 @@
                 <li><a href="./test.html">迷因測驗</a></li>
                 <li><a href="./articles.html">精選專欄</a></li>
             </ul>
+            <!-- 漢堡線 -->
+            <button class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+                <svg viewBox="0 0 100 100" width="40">
+                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -33,37 +42,37 @@
             <h1>精選影音</h1>
             <div class="video-list">
                 <!-- 暫時放 -->
-                <img src="./images/temp-videos.png" alt="temp">
-                <!-- <div class="video-item1 active" id="video01">
-                    <div><video controls src="./videos/select-video01.mp4" alt="Yo!battle 高清修復"></div>
+                <!-- <img src="./images/temp-videos.png" alt="temp"> -->
+                <div class="video-item1 active" id="video01">
+                    <div class="hide"><iframe width="560" height="315" src="https://www.youtube.com/embed/UGmM40l8mT4" title="Yo!battle 高清修復" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
                     <img src="./images/popular/popular06.png" alt="yobattle">
                     <div class="title active-text">
                         <h3>#01<br>
                             Yo!battle 高清修復</h3>
                         <p>廢哥 FeiGo<br>
-                            25 secs</p>
+                            1 min</p>
                     </div>
                 </div>
                 <div class="video-item2 hide" id="video02">
-                    <div><video controls src="./videos/select-video02.mp4" alt="如果早知道 男生也會被性侵" selector></div>
-                    <img src="./images/popular/popular06.png" alt="yobattle">
+                    <div class="hide"><iframe width="560" height="315" src="https://www.youtube.com/embed/vZ9MbIJ3MzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+                    <img src="./images/celebrities/celebrities06.jpg" alt="yobattle">
                     <div class="title hide-text">
                         <p>#02</p>
                         <p>如果早知道 男生也會被性侵</p>
-                        <p>我是老師不要叫我老師</p>
-                        <p>22 secs</p>
+                        <p>Ray</p>
+                        <p>17mins</p>
                     </div>
                 </div>
                 <div class="video-item2 hide" id="video03">
-                    <div><video controls src="./videos/select-video03.mp4" alt="打到我的上巴"></div>
-                    <img src="./images/popular/popular06.png" alt="yobattle">
+                    <div class="hide"><iframe width="560" height="315" src="https://www.youtube.com/embed/-RKZtDmhYlA?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+                    <img src="./images/popular/popular12.png" alt="yobattle">
                     <div class="title hide-text">
                         <p>#03</p>
                         <p>打到我的上巴</p>
                         <p>TITV 原視新聞</p>
-                        <p>12 secs</p>
+                        <p>2 mins</p>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
         <!-- 精選好文 -->
@@ -175,5 +184,6 @@
             <br>本網站為緯育 TibaMe 前端工程師班第 82 期學員專題作品，本平台僅供學習、展示之用</p>
         </div>
     </footer>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

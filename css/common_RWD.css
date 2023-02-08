@@ -1,0 +1,61 @@
+/* iPad Mini */
+@media screen and (max-width:768px) {
+    /* nav */
+    nav .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        z-index: 20;
+        height: calc(100vh - 70px);
+        background-color: var(--yellow-color);
+        opacity: .9;
+        display: none;
+    }
+    ul.menu a{
+        width: 130px;
+    }
+    .hamburger{   
+        display: block;
+        margin: 10px;
+        --button-color: var(--black-color);
+        background: transparent;
+        border: 3px solid var(--black-color);
+        border-radius: 3px;
+    }
+    .hamburger .line {
+    transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+    transform-origin: center;
+    }
+    .hamburger[aria-expanded="true"] .line {
+    transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+    }
+    .hamburger[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45;
+    }
+    .hamburger[aria-expanded="true"] .top {
+    rotate: 45deg;
+    }
+    .hamburger[aria-expanded="true"] .middle {
+    opacity: 0;
+    }
+    .hamburger[aria-expanded="true"] .bottom {
+    rotate: -45deg;
+    }
+    /* footer */
+    .footer_nav{
+        margin: 20px;
+        padding: 0 50px;
+    }
+    .footer_bottom p{
+        text-align: center;
+        margin: 20px;
+        padding: 0 40px;
+    }
+
+}
+/* iPhone XR */
+@media screen and (max-width:414px){
+
+}

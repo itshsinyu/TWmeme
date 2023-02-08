@@ -217,7 +217,7 @@ textarea{
     padding: 20px;
 }
 
-button{
+form > button{
     padding: 10px 15px;
     font-weight: 500;
     background-color: var(--yellow-color);
@@ -225,7 +225,7 @@ button{
     border-radius: 5px;
     border: 1px solid var(--black-color);
 }
-button:hover{
+form > button:hover{
     color: var(--white-color);
     box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;

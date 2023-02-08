@@ -52,17 +52,20 @@ ul.menu a{
 ul.menu > li > a:hover{
     color: var(--white-color);
 }
-
+.hamburger{
+    display: none;
+}
 /* ======== footer ========*/
 footer{
     background-color: var(--yellow-color);
-    height: 100px;
+    /* height: 100px; */
+    height: auto;
     padding: 10px 0;
     font-weight: 400;
 }
 .footer_nav{
     display: flex;
-    /* outline: 1px solid red; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 .footer_nav a{
@@ -85,14 +88,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
 }
 .footer_bottom img{
-    /* outline: 1px solid blue; */
     width: 100px;
 }
 .footer_bottom p{
-    /* outline: 1px solid green; */
     font-size: .6rem;
     line-height: 120%;
     padding: 0 0 2px 5px;

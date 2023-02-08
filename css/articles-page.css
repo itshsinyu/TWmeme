@@ -42,12 +42,23 @@ main{
     padding: 30px;
     position: relative;
 }
+.item-top{
+    display: flex;
+    flex-direction: column;
+}
 .item-top h1{
     font-size: 3rem;
     margin: 10px 0;
     padding-left: 30px;
 }
-
+.share{
+    width: 30px;
+    margin: 0 20px;
+    display: flex;
+}
+.share img{
+    margin-left: 8px;
+}
 /*  author */
 .author{
     max-height: 100px;

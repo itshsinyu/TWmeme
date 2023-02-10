@@ -181,16 +181,17 @@
     max-width: 450px;
 }
 .right-img{
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
-    width: 105vw;
-
+    width: 110vw;
+    position: relative;
+    left: -100px;
 }
 .right-img01{
     margin-top: -20px;
     border-bottom: 1px solid var(--darkgray-color);
-    position: relative;
+    /* position: relative; */
     /* 因為文字動起來會讓zindex失效所以給position:relative */
     left: -150px;
 }
@@ -207,15 +208,18 @@
 .bg_gray{
     background-color: gray;
 }
-.transleft{
-    transform: translateX(-30px);
+.trans-left{
+    transform: translateX(-40px);
     transition: 3s;
 }
-.transright{
-    transform: translateX(20px);
+.trans-right{
+    transform: translateX(40px);
     transition: 3s;
 }
-
+.evergreen-left{
+    transform: translateX(-280px);
+    transition: 6s;
+}
 /* evergreen */
 .evergreen{
     width: 100%;

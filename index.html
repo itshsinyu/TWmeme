@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/common_RWD.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css" integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -69,21 +70,39 @@
         </div>
         
         <!-- 今晚我想來點 videos -->
-        <div class="swiper">
-            <h1>今晚...我想來點</h1>
-            <div class="swiper-wrapper videos">
-                <div class="swiper-slide"><video src="./videos/video01.mp4" controls title="大平台"></video></div> 
-                <div class="swiper-slide"><video src="./videos/video02.mov" controls title="反作用力大師吳克群"></video></div> 
-                <div class="swiper-slide"><video src="./videos/video03.mp4" controls title="美江"></video></div> 
-                <div class="swiper-slide"><video src="./videos/video04.mp4" controls title="假的" ></video></div> 
-                <div class="swiper-slide"><video src="./videos/video05.mp4" controls title="出事了阿伯" ></video></div> 
-                <!-- <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/qo3H-VgXmHE" title="九天玄女" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div> -->
+        <section class="tonight">
+            <h1>今晚 ... 我想來點</h1>
+            <div class="swiper meme-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide">
+                        <video src="./videos/video01.mp4" controls title="大平台"></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="./videos/video02.mov" controls title="反作用力大師吳克群"></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="./videos/video03.mp4" controls title="美江"></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="./videos/video04.mp4" controls title="假的" ></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="./videos/video05.mp4" controls title="出事了阿伯" ></video>
+                    </div>
+                    <!-- Slide-end -->
+                </div>
+                <div class="swiper-button-prev slider-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-        </div>
+            <div class="meme-slider-control">
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
         <!-- 這裡總有一款屬於你的菜  -->
         <div class="index-allmeme">
@@ -185,11 +204,12 @@
         </div>
     </footer>
 
-    <!-- script CDN -->
+    <!-- script -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/index-scroll.js"></script>
-    <script>        
+    <script src="./js/index-swiper.js"></script>
+    <!-- <script>        
         let mySwiper = new Swiper ('.swiper', {
         slidesPerView : 3,
         spaceBetween: 10,
@@ -202,6 +222,6 @@
         clickable: true,
         },
         })        
-    </script>
+    </script> -->
 </body>
 </html>

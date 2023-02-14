@@ -299,6 +299,7 @@
 .bottom{
     max-width: 1200px;
     margin: 80px auto;
+    
 }
 .bottom_gif{
     display: flex;
@@ -312,6 +313,7 @@
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
+    transition: 0.2s ease;
 }
 
 .bottom_gif a:hover{
@@ -337,10 +339,10 @@
     margin: 100px 0;
 }
 .bottom_poster img{max-height: 350px;}
+.bottom_poster a{transition: .2s ease;}
 .bottom_poster a:hover{
     z-index: 4;
     transform: scale(1.2);
-    transition: .2s ease;
     box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
 }
@@ -372,6 +374,7 @@
     border-radius: 5px;
     display: inline-block;
     margin: 20px 0;
+    transition: .3s ease;
 }
 .more:hover{
     color: var(--white-color);

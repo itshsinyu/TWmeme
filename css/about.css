@@ -116,13 +116,13 @@ main p{
     /* margin: 10px; */
     /* box-shadow: 0 0 1px var(--black-color); */
     max-width: 220px;
+    transition: .3s ease;
 }
 .read-list a:hover{
     border: 2px solid var(--yellow-color);
     color: var(--yellow-color);
     transform: scale(1.1);
     font-weight: 700;
-    transition: .5s;
 }
 .read-list a > span{
     /* outline: 1px solid red; */
@@ -133,7 +133,7 @@ main p{
 }
 .read-list a:hover img{
     transform: scale(1.1);
-    transition: .5s;
+    transition: .5s ease;
 }
 .list-pic{
     /* outline: 1px solid pink; */
@@ -171,6 +171,7 @@ main p{
     color: var(--black-color);
     border-radius: 5px;
     border: 1px solid var(--black-color);
+    transition: .3s ease;
 }
 .more-btn a:hover{
     color: var(--white-color);
@@ -206,6 +207,7 @@ input{
     width: 100%;
     font-size: 1rem;
     padding: 20px;
+    transition: .3s ease;
 }
 input:focus, textarea:focus{
     background: var(--yellow-color);
@@ -218,12 +220,14 @@ textarea{
 }
 
 form > button{
+    font-size: 1rem;
     padding: 10px 15px;
     font-weight: 500;
     background-color: var(--yellow-color);
     color: var(--black-color);
     border-radius: 5px;
     border: 1px solid var(--black-color);
+    transition: .3s ease;
 }
 form > button:hover{
     color: var(--white-color);
@@ -286,6 +290,7 @@ form > button:hover{
     padding: 3px 0px;
     font-weight: 500;
     border-radius: 5px;
+    transition: .1s ease;
 }
 .drink-select-text li:hover{
     background-color: var(--yellow-color);
@@ -299,6 +304,7 @@ form > button:hover{
     color: var(--black-color);
     width: 100%;
     border-radius: 5px;
+    transition: .3s ease;
 }
 .money span{
     font-size: 1.2rem;
@@ -387,6 +393,7 @@ form > button:hover{
     border: 1px solid var(--black-color);
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: .3s ease;
 }
 .list-img img:hover{
     box-shadow: 2px 2px 5px var(--black-color);

@@ -7,17 +7,16 @@ ul.menu > li >a:hover{
 
 
 main{
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 1080px;
-    min-height: 82vh;
+    min-height: 80vh;
     text-align: center;
-    
     /* outline: 1px solid var(--darkgray-color); */
 }
 
 /* ======= main-test ======= */
 .main-test{
-    outline: 1px solid var(--darkgray-color);
+    /* outline: 1px solid var(--darkgray-color); */
     max-width: 800px;
     margin: 0 auto;
     padding: 30px;
@@ -33,6 +32,7 @@ main{
     position: relative;
     max-width: 600px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .pic img{
     display: block;
@@ -40,6 +40,10 @@ main{
     height: 300px;
     object-fit: cover;
     border: 1px solid var(--darkgray-color);
+    transition: .3s ease;
+}
+.pic img:hover{
+    transform: scale(1.1);
 }
 .pic p{
     position: absolute;
@@ -56,15 +60,20 @@ main{
     max-width: 600px;
     margin: 0 auto;
 }
-.options li{
+.options button{
     background-color: var(--gray-color);
     padding: 10px 20px;
     margin: 30px 0;
     border-radius: 5px;
     font-size: 1.2rem;
+    transition: .2s ease;
+    border: 0px;
+    line-height: 1rem;
 }
-.options li:hover{
+.options button:hover{
     background-color: var(--yellow-color);
+    color: var(--white-color);
+    box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
 }
 
@@ -90,10 +99,15 @@ main{
     text-align: left;
     line-height: 2rem;
     position: relative;
+    background-color: var(--white-color);
 }
 .from a{
     text-decoration: none;
     color: var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+}
+.from a:hover{
+    color: var(--yellow-color);
     border-bottom: 3px solid var(--yellow-color);
 }
 .triangle{
@@ -131,9 +145,11 @@ main{
     background-color: var(--yellow-color);
     color: var(--black-color);
     border-radius: 5px;
+    transition: .2s ease;
 }
 .bottom span:hover{
     color: var(--white-color);
+    box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
 }
 
@@ -141,26 +157,104 @@ main{
 
 
 /*  ======= result  =======  */
-/* 暫時的假圖 */
-.temp img{
-    width: 800px;
-}
- 
 .main-result{
     max-width: 1080px;
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 .main-result h1{
     font-size: 2rem;
     margin: 30px 0;
 }
+.main-result h1::after,.main-result h1::before{
+    content: " ▬ ";
+    color: var(--yellow-color);
+}
+
+.container{
+    border: 5px solid var(--black-color);
+    max-height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    letter-spacing: 4px;
+}
+.container img{
+    width: 100%;
+}
+.container h2{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    line-height: 4rem;
+    font-size: 2rem;
+}
+.top-left .scores{
+    height: 130px;
+    display: block;
+    object-fit: contain;
+    border: 5px solid var(--black-color);
+    background-color: var(--yellow-color);
+}
+.top-right{
+    background-color: var(--yellow-color);
+    position: relative;
+    border: 5px solid var(--black-color);
+    border-top-right-radius: 10px;
+}
+.top-right h3{
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 4.2rem;
+}
+.top-right p{
+    color: var(--black-color);
+    opacity: .1;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.2rem;
+}
+.top-right img{
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    max-width: 600px;
+    filter: brightness(0) invert(1);
+    transition: .5s ease;
+}
+.top-right img:hover{
+    opacity: 0.2;
+}
+.bottom-right{
+    border: 5px solid var(--black-color);
+    border-bottom-right-radius: 10px;
+}
+.bottom-left{
+    background-color: var(--yellow-color);
+    border: 5px solid var(--black-color);
+    border-bottom-left-radius: 10px;
+}
+.bottom-left h2{padding-bottom: 5px;}
+.bottom-left li{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    margin: 30px 100px;
+    width: 80px;
+    /* outline: 1px solid; */
+}
+.bottom-left li:hover{
+    color: var(--white-color);
+    cursor: pointer;
+}
+
 /* icons */
 .icons{
     /* outline: 1px solid red; */
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
 }
 .main-icons{
@@ -170,57 +264,40 @@ main{
     align-items: center;
 }
 .again{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 .again a{
     display: block;
     width: 200px;
-    line-height: 3rem;
+    line-height: 2.6rem;
     text-decoration: none;
     background-color: var(--yellow-color);
     color: var(--black-color);
     border: 2px solid var(--black-color);
     border-radius: 10px;
+    transition: 0.2s ease;
 }
-.main-icons > img:hover{
+.again a:hover{
+    color: var(--white-color);
+    box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
+}
+.icons img{
+    max-width: 40px;
+    object-fit: contain;
+    box-shadow: 2px 2px 1px var(--gray-color);
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+.icons img:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--black-color);
 }
 .social{
     position: absolute;
     right: -170px;
-    top: 2px;
+    top: 4px;
 }
-.icons img{
-    max-width: 50px;
-    object-fit: contain;
-    box-shadow: 2px 2px 1px var(--gray-color);
-    border: 2px solid var(--black-color);
-    border-radius: 14px;
+.social img{
+    margin: 0 5px;
 }
-
-/*
-.container{
-    border: 5px solid var(--black-color);
-    max-height: 700px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.container img{
-    width: 100%;
-}
-.top{
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--black-color);
-}
-.top-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid var(--black-color);
-}
-.container h2{
-    background-color: var(--black-color);
-    color: var(--white-color);
-} */

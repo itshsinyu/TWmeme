@@ -47,11 +47,11 @@
                     <p>圖片來自 - 彭佳慧維基百科</p>
                 </div>
                 <!-- 選項 -->
-                <ul class="options">
-                    <li><span class="opt-01">大齡女子</span></li>
-                    <li><span class="opt-01">歌聲動人</span></li>
-                    <li><span class="opt-01">才貌雙全</span></li>
-                </ul>
+                <div class="options">
+                    <button class="opt-01">大齡女子</button>
+                    <button class="opt-01">歌聲動人</button>
+                    <button class="opt-01">才貌雙全</button>
+                </div>
                 <!-- checked image -->
                 <div class="checked hide">
                     <img src="./images/test/checked01.png" alt="right">
@@ -66,24 +66,24 @@
                 <!-- 下方按鈕 進度 -->
                 <div class="bottom">
                     <span href=""> </span>
-                    <p>01 / 10</p>
+                    <p>01 / 05</p>
                     <span id="next-01">下一題</span>
                 </div>
             </div>
-            <!-- q10 -->
-            <div class="test q10 hide" id="q10">
-                <h1>#10.「假的！ 哎呀！我眼睛業障重啊！」<br>
+            <!-- q05 -->
+            <div class="test q05 hide" id="q05">
+                <h1>#05.「假的！ 哎呀！我眼睛業障重啊！」<br>
                     出自哪位法師勸妻子看開丈夫外遇</h1>
                 <div class="pic">
                     <img src="./images/test/q10.png" alt="">
                     <p>圖片來自 - Youtube</p>
                 </div>
                 <!-- 選項 -->
-                <ul class="options">
-                    <li><span class="opt-10">淨空法師</span></li>
-                    <li><span class="opt-10">聖嚴法師</span></li>
-                    <li><span class="opt-10">海濤法師</span></li>
-                </ul>
+                <div class="options">
+                    <button class="opt-05">淨空法師</button>
+                    <button class="opt-05">聖嚴法師</button>
+                    <button class="opt-05">海濤法師</button>
+                </div>
                 <!-- checked image -->
                 <div class="checked hide">
                     <img src="./images/test/checked10.png" alt="right">
@@ -97,41 +97,37 @@
                 </div>
                 <!-- 下方按鈕 進度 -->
                 <div class="bottom">
-                    <span href="" id="prev-10">上一題</span>
-                    <p>10 / 10</p>
-                    <span id="next-10">看結果</span>
+                    <span href="" id="prev-05">上一題</span>
+                    <p>05 / 05</p>
+                    <span id="next-05">看結果</span>
                 </div>
             </div>
         </section>
         <section class="main-result hide" id="result">
             <h1>測驗結果</h1>
             <div class="container">
-                <!-- 暫時的假圖 -->
-                <div class="temp">
-                    <img src="./images/test/temp-result.png" alt="">
-                </div>
                 <!-- top -->
-                <!-- <div class="top">
-                    <div class="top-left">
-                        <h2>迷因成癮指數</h2>
-                        <div class="scores">
-                            <img src="./images/test/90-100.png" alt="">
-                        </div>
-                    </div>
-                    <div class="top-right">
-                        <h3>走在時代浪潮上的</h3>
-                        <p>把這些時間拿去讀書的話，早就哈佛或耶魯了吧</p>
-                        <img src="./images/test/result01.png" alt="">
-                    </div>
-                </div> -->
+                <div class="top-left">
+                    <h2>迷因成癮指數</h2>
+                    <img class="scores" src="./images/test/90-100.png" alt="90-100">
+                </div>
+                <div class="top-right">
+                    <h3>走在時代浪潮上的</h3>
+                    <p>把這些時間拿去讀書的話<br>早就哈佛或耶魯了吧</p>
+                    <img src="./images/test/result01.png" alt="result01">
+                </div>
                 <!-- bottom -->
-                <!-- <div class="bottom">
-                    <div class="bottom-left">
-                        <h2>成績單</h2>
-                        
-                    </div>
-                    <img src="./images/test/result-pic01.jpg" alt="">
-                </div> -->
+                <div class="bottom-left">
+                    <h2>成績單</h2>
+                    <ul>
+                        <li>第1題</li>
+                        <li>第2題</li>
+                        <li>第3題</li>
+                        <li>第4題</li>
+                        <li>第5題</li>
+                    </ul>
+                </div>
+                <img class="bottom-right" src="./images/test/result-pic01.jpg" alt="result-pic01">
             </div>
             <div class="icons">
                 <div class="main-icons">

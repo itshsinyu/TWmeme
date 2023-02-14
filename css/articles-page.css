@@ -148,9 +148,8 @@ main{
     font-weight: 500;
     background-color: var(--white-color);
     border: 2px solid var(--black-color);
-    /* margin: 10px; */
-    /* box-shadow: 0 0 1px var(--black-color); */
     max-width: 220px;
+    transition: .2s ease;
 }
 .read-list a:hover{
     border: 2px solid var(--yellow-color);

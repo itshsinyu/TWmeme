@@ -1,6 +1,12 @@
 # TWmeme
 0.1.4 (2023.02.13)
 #修改 
+-修改 category 圖片名字連結、pagination
+-修改每一頁transition: .3s ease;
+-修改 test result圖片 options
+
+0.1.4 (2023.02.13)
+#修改 
 - 修改 index 今晚我想來點 swiper
 
 0.1.3 (2023.02.10)

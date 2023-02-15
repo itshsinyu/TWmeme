@@ -1,3 +1,10 @@
+ul.menu > li:first-child a{
+    color: var(--white-color);
+}
+ul.menu > li >a:hover{
+    color: var(--white-color);
+}
+
 /* ======= banner 文字bg跑馬燈 ======= */
 .index-banner{
     background-color: var(--gray-color);

@@ -1,4 +1,4 @@
-ul.menu > li:nth-child(2) a{
+ul.menu > li:nth-child(3) a{
     color: var(--white-color);
 }
 ul.menu > li >a:hover{

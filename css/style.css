@@ -33,14 +33,14 @@ ul.menu > li >a:hover{
 }
 .w{
     position: absolute;
-    top: 80px;
+    top: 15%;
     right: 20%;
     z-index: 1;
 }
 .m{
     position: absolute;
-    bottom: 3vh;
-    left: -1vw;
+    bottom: 10%;
+    left: -1%;
     z-index: 1;
 }
 .e{
@@ -49,7 +49,12 @@ ul.menu > li >a:hover{
     right: 0;
     z-index: 1;
 }
-
+@media(max-width: 414px){
+    .tw-icon img{max-height: 50vh;}
+    .font-text{font-size: 8rem;}
+    .t{left: 5%;}
+    .w{right: 0%; top: 30%;}
+}
 /* 背後文字 bg loop */
 .banner-loop{
     position: relative;
@@ -186,13 +191,18 @@ ul.menu > li >a:hover{
 }
 @media (max-width: 414px) {
     .tonight .swiper{
-        height: 400px;
+        height: 450px;
+    }
+    .tonight .swiper .slider-arrow{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
     }
     .meme-slider-control .swiper-pagination .swiper-pagination-bullet{
-        width: 4.4rem!important;
+        width: 4rem!important;
         height: 1.5rem!important;
         line-height: 1.5rem!important;
-        font-size: 1rem!important;
+        font-size: .8rem!important;
     }
 }
 
@@ -215,7 +225,11 @@ ul.menu > li >a:hover{
     padding: 0 0 40px;
     font-size: 1.2rem;
 }
-
+@media (max-width: 414px) {
+    .index-allmeme h2{
+        font-size: 1.8rem;
+    }
+}
 /* 跑馬燈文字*/
 .left-text, .right-text{
     border: 1px solid var(--darkgray-color);
@@ -243,62 +257,46 @@ ul.menu > li >a:hover{
 /* 左右跑圖片 */
 .left-img{
     border: 1px solid var(--darkgray-color);
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    width: 110vw;
-    position: relative;
-    left: -100px;
+    width: 105vw;
+    /* position: relative; */
+    /* left: -100px; */
 }
-.left-img img{
+.left-img img, .right-img img{
     display: block;
     max-height: 200px;
     max-width: 450px;
 }
 .right-img{
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    width: 110vw;
-    position: relative;
+    width: 105vw;
     left: -100px;
 }
-.right-img01{
+#right-img01{
     margin-top: -20px;
     border-bottom: 1px solid var(--darkgray-color);
-    /* position: relative; */
+    position: relative;
     /* 因為文字動起來會讓zindex失效所以給position:relative */
-    left: -150px;
+    /* left: -150px; */
 }
-.right-img02{
+#right-img02{
     border: 1px solid var(--darkgray-color);
     position: relative;
-    left: -100px;
-}
-.right-img img{
-    display: block;
-    max-height: 200px;
-    max-width: 450px;
-}
-.bg_gray{
-    background-color: gray;
-}
-.trans-left{
-    transform: translateX(-40px);
-    transition: 3s;
-}
-.trans-right{
-    transform: translateX(40px);
-    transition: 3s;
-}
-.evergreen-left{
-    transform: translateX(-280px);
-    transition: 6s;
+    /* left: -100px; */
 }
 /* evergreen */
 .evergreen{
+    position: relative;
+    left: 200px;
+}
+.evergreen img{
+    max-width: 750px;
     width: 100%;
-    margin: 100px 0 0;
+    margin: 120px 0 0;
 }
 
 

@@ -137,7 +137,9 @@
             </section>
         </div>
     </main>
-
+    <div onclick="scrollToTop()" class="scrollToTop hide">
+        <img src="./images/back-to-top.png" alt="back-to-top">
+    </div>
     <!-- footer -->
     <footer>
         <ul class="footer_nav">
@@ -155,5 +157,20 @@
         </div>
     </footer>
     <script src="./js/hamburger.js"></script>
+    <script>
+        function scrollToTop(){
+            window.scrollTo(0, 0);
+        }
+        // 一開始隱藏 滑下來才remove hide
+        window.addEventListener("scroll", ()=>{
+        let scrollToTop = document.getElementsByClassName("scrollToTop")[0];
+        // console.log(window.pageYOffset);
+        if (window.pageYOffset >= 100){
+            scrollToTop.classList.remove("hide");
+        }else{
+            scrollToTop.classList.add("hide");
+        }
+        })
+    </script>
 </body>
 </html>

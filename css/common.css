@@ -12,9 +12,25 @@
 *{
     font-family: 'Noto Sans TC', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-image: url(../images/Gridzzly-gridpaper.jpg);
+}
+/* ==== top-btn ==== */
+.scrollToTop{
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 10;
+    max-width: 80px;
+}
+.scrollToTop img{
+    width: 100%;
+}
+.hide{
+    display:none;
 }
 /* ======== nav ======== */
 header{

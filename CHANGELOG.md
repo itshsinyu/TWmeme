@@ -1,4 +1,10 @@
 # TWmeme
+0.1.6 (2023.02.16)
+#修改、新增
+-修改 index gsap ScrollTrigger 左右圖片跑
+-修改 about RWD
+-新增 back to top 按鈕
+
 0.1.5 (2023.02.15)
 #修改、新增
 -修改 history、about、分門別類 圖片文字連結

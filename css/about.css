@@ -60,12 +60,14 @@ main p{
     padding: 30px 50px;
     background-color: var(--yellow-color);
 }
-.mask{
+.introduce-right::after{
+    content: "";
     position: absolute;
-    right: 0;
-    width: 850px;
-    height: 230px;
     background-image: linear-gradient(to top, var(--yellow-color) -15%, #ffff0000);
+    right: 0;
+    top: 0;
+    width: 79%;
+    height: 100%;
 }
 
 .whocares{
@@ -117,6 +119,7 @@ main p{
     /* box-shadow: 0 0 1px var(--black-color); */
     max-width: 220px;
     transition: .3s ease;
+    margin-bottom: 40px;
 }
 .read-list a:hover{
     border: 2px solid var(--yellow-color);

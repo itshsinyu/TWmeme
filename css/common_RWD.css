@@ -1,10 +1,17 @@
 /* iPad Mini */
 @media screen and (max-width:768px) {
-    /* nav */
+    /* ==== top-btn ==== */
+    .scrollToTop{
+        bottom: 1%;
+        right: 1%;
+        cursor: pointer;
+        max-width: 50px;
+    }
+    /* ==== nav ==== */
     nav .menu{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 70px;
         z-index: 20;
@@ -26,8 +33,7 @@
     }
     .hamburger .line {
     transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
-    transform-origin: center;
-    }
+    transform-origin: center;}
     .hamburger[aria-expanded="true"] .line {
     transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
     }
@@ -43,7 +49,7 @@
     .hamburger[aria-expanded="true"] .bottom {
     rotate: -45deg;
     }
-    /* footer */
+    /* ==== footer ==== */
     .footer_nav{
         margin: 20px;
         padding: 0 50px;
@@ -53,9 +59,106 @@
         margin: 20px;
         padding: 0 40px;
     }
-
+    /* ============ about ============== */
+    /* 迷因介紹 */
+    .main-introduce{
+        flex-direction: column;
+    }
+    .main-introduce .introduce-left p{
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    .main-introduce .introduce-right::after{
+        width: 100%;
+        height: 74%;
+        top: 90px;
+    }
+    /* 還想知道更多嗎？ */
+    .main-more .read-list{
+        padding: 10px 70px;
+        justify-content: center;
+    }
+    .main-more .read-list a{
+        margin: 20px 20px;
+    }
+    .main-more .more-btn a{
+        margin: 0 auto;
+    }
+    /* 聯絡我 */
+    .main-contact{
+        padding: 20px 60px!important;
+    }
+    /* buy me a drink */
+    .buy-me{
+        max-width: 700px;
+        width: 100%;
+    }
+    .buy-me .buy-me-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-me .buy-me-inner > img{
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+    .buy-me-inner .drink-select{
+        margin: 0px;
+        max-width: 600px;
+        width: 100%;
+    }
+    .money{
+        margin-top: 20px;
+    }
 }
 /* iPhone XR */
 @media screen and (max-width:414px){
-
+    
+    /* ============ about ============== */
+    /* 全台首家 */
+    .main-about > p{
+        line-height: 3rem!important;
+        font-size: .9rem!important;
+    }
+    .main-about .about-item h1{
+        font-size: 2rem;
+    }
+    /* 迷因介紹 */
+    .main-introduce .introduce-right::after{
+        height: 80%;
+        top: 90px;
+    }
+    /* buy me a drink */
+    .buy-me{
+        max-width: 400px;
+        width: 100%;
+    }
+    .drink-select-inner .drink-select-text > li{
+        padding: 0 5px;
+        font-size: .9rem;
+    }
+    .drink-select .drink-select-inner img{
+        max-height: 80px;
+    }
+     /* 參考資源 */
+    .main-ref > p{
+        padding: 0 20px!important;
+        line-height: 1.6rem!important;
+     }
+    .main-ref .container{
+        flex-direction: column;
+    }
+    .container .ref-left{
+        padding: 20px 0 0;
+    }
+    .container .ref-right{
+        flex-direction: column;
+        margin: 0 40px;
+        padding: 10px 20px;
+    }
+    .ref-right .list-text{
+        margin: 0px;
+    }
+    .ref-right .list-img img{
+        width:300px;
+    }
 }

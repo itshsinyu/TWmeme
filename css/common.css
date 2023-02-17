@@ -24,7 +24,7 @@ body{
     right: 3%;
     cursor: pointer;
     z-index: 10;
-    max-width: 80px;
+    max-width: 70px;
 }
 .scrollToTop img{
     width: 100%;

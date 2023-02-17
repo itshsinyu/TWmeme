@@ -109,6 +109,17 @@
     .money{
         margin-top: 20px;
     }
+    /* ============ category ============== */
+    .main-cards{
+        margin: 0 50px;
+    }
+    .main-cards .page{
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+    main .main-tag{
+        width: 60%;
+    }
 }
 /* iPhone XR */
 @media screen and (max-width:414px){
@@ -160,5 +171,16 @@
     }
     .ref-right .list-img img{
         width:300px;
+    }
+    /* ============ category ============== */
+    .main-cards{
+        margin: 0 30px;
+    }
+    .main-cards .page{
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    main .main-tag{
+        width: 80%;
     }
 }

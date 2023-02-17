@@ -119,7 +119,7 @@ input{
 
 /* pagination */
 .pagination{
-    width: 1080px;
+    max-width: 1080px;
     padding: 20px;
     margin: 30px auto;
     text-align: center;

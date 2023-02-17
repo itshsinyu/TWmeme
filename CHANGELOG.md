@@ -1,4 +1,7 @@
 # TWmeme
+0.1.8 (2023.02.17)
+#修改 index 今晚我想來點 video 加上 poster 圖片
+
 0.1.7 (2023.02.17)
 #修改
 -修改 back to top 寬度、category RWD

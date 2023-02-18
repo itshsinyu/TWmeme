@@ -244,15 +244,30 @@ main{
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--black-color);
-    margin: 30px 100px;
+    margin: 20px 80px;
     width: 80px;
     /* outline: 1px solid; */
 }
-.bottom-left li:hover{
+.bottom-left li span{
+    outline: 1px solid;
+    display: inline-block;
+    min-width: 80px;
+}
+.rw{
+    outline: 1px solid;
+    display: inline;
+    width: 80px;
+}
+
+.bottom-left li span:hover{
     color: var(--white-color);
     cursor: pointer;
 }
+.bottom-left li img{
+    max-width: 20px;
+    object-fit: contain;
 
+}
 /* icons */
 .icons{
     /* outline: 1px solid red; */

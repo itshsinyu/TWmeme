@@ -25,6 +25,7 @@ main{
 .test h1{
     font-size: 2rem;
     margin: 10px;
+    line-height: 3rem;
 }
 /* 圖片 */
 .pic{
@@ -50,6 +51,7 @@ main{
     bottom: 10px;
     right: 10px;
     color: var(--white-color);
+    text-shadow: 1px 1px 1px var(--black-color);
 }
 /* 選項 */
 .options{
@@ -79,10 +81,14 @@ main{
     box-shadow: 1px 1px 5px var(--black-color);
     cursor: pointer;
 }
+input:checked + label{   
+    background-color: var(--yellow-color);
+}
 
 /* checked */
 .checked{
     position: relative;
+    pointer-events: none;
 }
 .checked img{
     position: absolute;
@@ -103,6 +109,7 @@ main{
     line-height: 2rem;
     position: relative;
     background-color: var(--white-color);
+    transition: .5s ease;
 }
 .from a{
     text-decoration: none;
@@ -244,7 +251,7 @@ main{
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--black-color);
-    margin: 20px 80px;
+    margin: 30px 100px;
     width: 80px;
     /* outline: 1px solid; */
 }
@@ -252,11 +259,6 @@ main{
     outline: 1px solid;
     display: inline-block;
     min-width: 80px;
-}
-.rw{
-    outline: 1px solid;
-    display: inline;
-    width: 80px;
 }
 
 .bottom-left li span:hover{

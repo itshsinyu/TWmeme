@@ -123,7 +123,86 @@
 }
 /* iPhone XR */
 @media screen and (max-width:414px){
-    
+    /* ============ index ============ */
+    .tw-icon img{max-height: 50vh;}
+    .font-text{font-size: 8rem;}
+    .t{left: 5%;}
+    .w{right: 0%; top: 25%;}
+    /* 今晚我想來點 */
+    .tonight .swiper{
+        height: 450px;
+    }
+    .tonight .swiper .slider-arrow{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .meme-slider-control .swiper-pagination .swiper-pagination-bullet{
+        width: 4rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+    /* 這裡總有一款屬於你的菜 */
+    .index-allmeme h2{
+        font-size: 1.8rem;
+    }
+    #left-img-02{
+        justify-content: center;
+    }
+    .left-img img, .right-img img{
+        max-width: 220px;
+        max-height: 120px;
+    }
+    .right-img{
+        left: 0px;
+    }
+    #right-img01{
+        left: -50px;
+    }
+    #right-img02{
+        left: -35px;
+        justify-content: center;
+    }
+    .evergreen{
+        left:100px;
+    }
+    .evergreen img{
+        max-width: 350px;
+        margin: 50px 0 0;
+    }
+    .bottom_gif{
+        flex-direction: column;
+        /* outline: 1px solid red; */
+        width: 350px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .bottom_gif a{
+        width: 250px;
+        height: 195px;
+        outline: 1px solid;
+    }
+    .bottom_gif a:not(:last-child){
+        margin: 0px 0px 20px 0px;
+    }
+    .bottom_poster img{max-height: 150px;}
+    .poster01{
+        transform: rotate(15deg) translateY(25px) translateX(-25px);
+        z-index:4;
+    }
+    .poster02{
+        transform: rotate(5deg) translateX(-15px);;
+        z-index:3;
+    }
+    .poster03{
+        transform: rotate(-5deg);
+        z-index:2;
+    }
+    .poster04{
+        transform: rotate(-25deg) translateY(35px) translateX(25px);;
+        z-index:1;
+    }
     /* ============ about ============== */
     /* 全台首家 */
     .main-about > p{
@@ -182,5 +261,241 @@
     }
     main .main-tag{
         width: 80%;
+    }
+    /* ============ history ============== */
+    .main-years a{
+        padding: 5px 5px;
+    }
+    /* line */
+	.timeline::before{
+		left: 10px;
+	}
+    .end > span{
+        position: absolute;
+        left: 10px;
+        padding: 10px;
+    }
+    /* 內容 */
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+        padding-right: 10px;
+	}
+    .timeline-item > h1{
+        left: 50px;
+        top: -80px;
+    }
+    .content{
+        margin-top: 150px;
+    }
+    .timeline-item{
+        padding-top: 20px;
+    }
+    .timeline-item:nth-child(odd) > .content{
+        text-align: start;
+    }
+    .content a{
+        margin: 0px 12px;
+    }
+    .content p{
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+    
+    /* ============ test ============== */
+    .main-test{
+        padding: 10px;
+    }
+    .test h1{
+        line-height: 2rem;
+        font-size: 1.3rem;
+        width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+    .pic{
+        margin-top: 10px;
+    }
+    .pic img{
+        width: 400px;
+    }
+    .pic p{
+        bottom: 5px;
+        right: 5px;
+    }
+    .options label{
+        font-size: 1rem;
+        padding: 10px 10px;
+    }
+    .options label:hover{
+        background-color: var(--gray-color);
+        color: var(--black-color);
+        box-shadow: 0px 0px 0px;
+    }
+    .bottom span{
+        font-size: 1rem;
+        width: 100px;
+    }
+    .checked img{
+        position: absolute;
+        max-width: 340px;
+        left: 0px;
+        top: -80px;
+    }
+    /*  ======= result  =======  */
+
+    .main-result{
+        max-width: 400px;
+    }
+    .container h2{
+        line-height: 2rem;
+        font-size: .9rem;
+    }
+    .top-left .scores{
+        height: 80px;
+    }
+    .top-right h3{
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+    .top-right p{
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+    .top-right img{
+        left: 0px;
+    }
+    .bottom-right{
+        height: 230px;
+        object-fit: cover;
+    }
+    .bottom-left li{
+        margin: 10px 10px;
+        font-size: 1rem;
+    }
+    .bottom-right{
+        min-width: 200px;
+    }
+    .icons{
+        max-width: 350px;
+    }
+    .social{
+        display: none;
+    }
+    /* ============ articles ============== */
+    /* 精選影音 */
+    .video-list{
+        display: block;
+        flex-direction: column;
+        width: 400px;
+    }
+    .video-list img{
+        width: 400px;
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
+    .container{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .active h3{
+        bottom: 40px;
+    }
+    .active h4{
+        font-size: 1.8rem;
+        bottom: 10px;
+    }
+    .active p,.aside p{
+        display: none;
+    }
+    .aside{
+        min-width: 400px;
+        margin: 0;
+        opacity: 1;
+        height: 300px;
+    }
+    .aside h3{
+        bottom: 40px;
+        font-size: 4rem;
+    }
+    .aside h4{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: var(--white-color);
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-shadow: 0px 1px 3px var(--black-color);
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+        padding-top: 40px;
+    }
+    /* 精選好文 */
+    .main-articles{
+        margin-bottom: 100px;
+    }
+    .articles-list-top{
+        flex-direction: column;
+    }
+    .articles-list-top a{
+        margin: 20px 0;
+    }
+    /* 7-9 */
+    .articles-list-bottom a{
+        width: 380px;
+        height: 150px;
+        margin: 50px auto;
+    }
+    .item h3{
+        font-size: 2rem;
+    }
+    .item > img{
+        padding: 5px;
+        right: -20px;
+    }
+    .item-inner{
+        padding: 50px 70px 0 10px;
+    }
+    .item-inner span{
+        font-size: 1rem;
+    }
+    .arrow{
+        font-size: .9rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    /* ============ articles-page ============== */
+    .author, .item-top h1{
+        padding-left: 0px;
+    }
+    .item-img img{
+        max-height: 200px;
+    }
+    .up{
+        top: -30px;
+    }
+    .item-p{
+        padding-top: 25px;
+    }
+    .item-p h2{
+        display: inline-block;
+        /* outline: 1px solid; */
+        margin:0 30px;
+    }
+    /* 還想知道更多嗎？ */
+    .bottom-section .read-list{
+        padding: 10px 70px;
+        justify-content: center;
+    }
+    .bottom-section .read-list a{
+        margin: 20px 20px;
+    }
+    .bottom-section .more-btn a{
+        margin: 0 auto;
     }
 }

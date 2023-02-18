@@ -4,7 +4,7 @@ gsap.to("#left-img-01", {
   scrollTrigger: {
       trigger: "#left-img-01",
       start:"top 80%",
-      end:"bottom 5%",
+      end:"bottom 15%",
       // markers: true,
       scrub: true,
   }
@@ -25,7 +25,7 @@ gsap.to(".evergreen", {
   scrollTrigger: {
       trigger: ".evergreen",
       start:"top 80%",
-      end:"bottom 0%",
+      end:"bottom 5%",
       // markers: true,
       scrub: true,
   }

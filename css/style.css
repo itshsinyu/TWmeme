@@ -49,12 +49,6 @@ ul.menu > li >a:hover{
     right: 0;
     z-index: 1;
 }
-@media(max-width: 414px){
-    .tw-icon img{max-height: 50vh;}
-    .font-text{font-size: 8rem;}
-    .t{left: 5%;}
-    .w{right: 0%; top: 30%;}
-}
 /* 背後文字 bg loop */
 .banner-loop{
     position: relative;
@@ -190,20 +184,7 @@ ul.menu > li >a:hover{
     color: var(--black-color);
 }
 @media (max-width: 414px) {
-    .tonight .swiper{
-        height: 450px;
-    }
-    .tonight .swiper .slider-arrow{
-        width: 3rem;
-        height: 3rem;
-        font-size: 2rem;
-    }
-    .meme-slider-control .swiper-pagination .swiper-pagination-bullet{
-        width: 4rem!important;
-        height: 1.5rem!important;
-        line-height: 1.5rem!important;
-        font-size: .8rem!important;
-    }
+    
 }
 
 /* ======= 這裡總有一款屬於你的菜 ======= */
@@ -224,11 +205,6 @@ ul.menu > li >a:hover{
 .index-allmeme > p{
     padding: 0 0 40px;
     font-size: 1.2rem;
-}
-@media (max-width: 414px) {
-    .index-allmeme h2{
-        font-size: 1.8rem;
-    }
 }
 /* 跑馬燈文字*/
 .left-text, .right-text{
@@ -257,7 +233,7 @@ ul.menu > li >a:hover{
 /* 左右跑圖片 */
 .left-img{
     border: 1px solid var(--darkgray-color);
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     width: 105vw;
@@ -270,11 +246,11 @@ ul.menu > li >a:hover{
     max-width: 450px;
 }
 .right-img{
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     width: 105vw;
-    left: -100px;
+    left: -110px;
 }
 #right-img01{
     margin-top: -20px;
@@ -284,9 +260,9 @@ ul.menu > li >a:hover{
     /* left: -150px; */
 }
 #right-img02{
-    border: 1px solid var(--darkgray-color);
+    border-top: 1px solid var(--darkgray-color);
     position: relative;
-    /* left: -100px; */
+    left: -80px;
 }
 /* evergreen */
 .evergreen{

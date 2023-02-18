@@ -1,4 +1,8 @@
 # TWmeme
+0.1.12 (2023.02.18)
+#修改
+-修改 RWD history、index、articles、test
+
 0.1.11 (2023.02.18)
 #修改
 -修改 test 1-5題、result圖

@@ -23,7 +23,6 @@ main h1::before,h1::after, h2::before,h2::after{
     max-width: 900px;
     margin: 10px auto;
     display: flex;
-    
     transition: .5s ease;
 }
 .playicon{
@@ -91,7 +90,7 @@ main h1::before,h1::after, h2::before,h2::after{
     color: var(--white-color);
     font-size: 3rem;
     font-weight: 900;
-    text-shadow: 1px 1px 1px var(--black-color);
+    text-shadow: 0px 1px 3px var(--black-color);
 }
 .aside h4{
    font-size: .9rem;

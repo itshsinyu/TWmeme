@@ -79,7 +79,7 @@ window.addEventListener( "load" , function (){
     });
     this.document.getElementById("prev-05").addEventListener("click", function(){
         console.log('djlasl')
-        q02.classList.remove("hide");
+        q04.classList.remove("hide");
         q05.classList.add("hide");
     });
 

@@ -1,4 +1,8 @@
 # TWmeme
+0.1.16 (2023.02.19)
+#新增 
+-新增 首頁 preloader
+
 0.1.15 (2023.02.19)
 #修改
 -修改 RWD index-allmeme overflow: hidden、history透明1

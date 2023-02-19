@@ -15,7 +15,7 @@ window.addEventListener( "load" , function (){
     let opt05 = this.document.getElementsByClassName("options")[4];
     let checked05 = this.document.getElementsByClassName("checked")[4];
     let from05 = this.document.getElementsByClassName("from")[4];
-    console.log(opt05);
+    // console.log(opt05);
     opt01.addEventListener("click", function(){
         console.log("123");
         checked01.classList.remove("hide");
@@ -99,39 +99,24 @@ window.addEventListener( "load" , function (){
     let bottomr01 = this.document.getElementsByClassName("bottom-right")[0];
     let bottomr02 = this.document.getElementsByClassName("bottom-right")[1];
     let bottomr03 = this.document.getElementsByClassName("bottom-right")[2];
-    // bottom-left right&wrong
-    let wrong01 = this.document.getElementsByClassName("wrong")[0];
-    let wrong02 = this.document.getElementsByClassName("wrong")[1];
-    let right01 = this.document.getElementsByClassName("right")[0];
-    // console.log(right01)
+
+    
 
     // 成績單
     document.getElementById("next-05").addEventListener("click", function () {
         
         let total = document.getElementsByTagName("input");
         let grade = 0;
-
-        let rightimg = document.createElement("img");
-        let wrongimg = document.createElement("img");
-        rightimg.src="../images/test/right.png";
-        wrongimg.src="../images/test/wrong.png";
-        let num = document.getElementsByClassName("bottom-left-num");
-        
         for(let i=0; i<total.length; i++){
             if(total[i].value == "right"){
                 console.log(total[i].value)
                 if(total[i].checked){
                     grade += 20;
-                    num[i].appendChild(rightimg);
                 }
             }
         }
         // console.log(total)
-        for(let index=0; index<num.length; index++){
-            console.log(num[index]);
-            // if(total[].value == "right"){
-            // }
-        }
+        
         // console.log(grade)
         switch (grade) {
             case 0:
@@ -141,7 +126,7 @@ window.addEventListener( "load" , function (){
                 mainTest.classList.add("hide");
                 bottomr03.classList.remove("hide");
                 bottomr01.classList.add("hide");
-
+                
                 break;
             case 40:
             case 60:
@@ -165,6 +150,35 @@ window.addEventListener( "load" , function (){
                 topr01.classList.remove("hide");
                 topr03.classList.add("hide");
                 break;
-          }
-    });
-});
+            }
+            });
+        });
+
+        // 成績單左下的v或x
+        // let num = document.getElementsByClassName("bottom-left-num");
+        let optR01 = document.getElementsByClassName("opt-right")[0];
+        let optR02 = document.getElementsByClassName("opt-right")[1];
+        let optR03 = document.getElementsByClassName("opt-right")[2];
+        let optR04 = document.getElementsByClassName("opt-right")[3];
+        let optR05 = document.getElementsByClassName("opt-right")[4];
+        optR01.addEventListener("click", function(){
+            document.getElementsByClassName("right")[0].classList.remove("hide");
+            document.getElementsByClassName("wrong")[0].classList.add("hide");
+        })
+        optR02.addEventListener("click", function(){
+            document.getElementsByClassName("right")[1].classList.remove("hide");
+            document.getElementsByClassName("wrong")[1].classList.add("hide");
+        })
+        optR03.addEventListener("click", function(){
+            document.getElementsByClassName("right")[2].classList.remove("hide");
+            document.getElementsByClassName("wrong")[2].classList.add("hide");
+        })
+        optR04.addEventListener("click", function(){
+            document.getElementsByClassName("right")[3].classList.remove("hide");
+            document.getElementsByClassName("wrong")[3].classList.add("hide");
+        })
+        optR05.addEventListener("click", function(){
+            document.getElementsByClassName("right")[4].classList.remove("hide");
+            document.getElementsByClassName("wrong")[4].classList.add("hide");
+        })
+        

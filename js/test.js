@@ -100,7 +100,40 @@ window.addEventListener( "load" , function (){
     let bottomr02 = this.document.getElementsByClassName("bottom-right")[1];
     let bottomr03 = this.document.getElementsByClassName("bottom-right")[2];
 
-    
+    // 題目跳q01-q05
+    let num01 = document.getElementsByClassName("bottom-left-num")[0];
+    let num02 = document.getElementsByClassName("bottom-left-num")[1];
+    let num03 = document.getElementsByClassName("bottom-left-num")[2];
+    let num04 = document.getElementsByClassName("bottom-left-num")[3];
+    let num05 = document.getElementsByClassName("bottom-left-num")[4];
+    num01.addEventListener("click",function(){
+        mainTest.classList.remove("hide");
+        q01.classList.remove("hide");
+        q05.classList.add("hide");
+        result.classList.add("hide");
+    });
+    num02.addEventListener("click",function(){
+        mainTest.classList.remove("hide");
+        q02.classList.remove("hide");
+        q05.classList.add("hide");
+        result.classList.add("hide");
+    });
+    num03.addEventListener("click",function(){
+        mainTest.classList.remove("hide");
+        q03.classList.remove("hide");
+        q05.classList.add("hide");
+        result.classList.add("hide");
+    });
+    num04.addEventListener("click",function(){
+        mainTest.classList.remove("hide");
+        q04.classList.remove("hide");
+        q05.classList.add("hide");
+        result.classList.add("hide");
+    });
+    num05.addEventListener("click",function(){
+        mainTest.classList.remove("hide");
+        result.classList.add("hide");
+    });
 
     // 成績單
     document.getElementById("next-05").addEventListener("click", function () {
@@ -155,7 +188,6 @@ window.addEventListener( "load" , function (){
         });
 
         // 成績單左下的v或x
-        // let num = document.getElementsByClassName("bottom-left-num");
         let optR01 = document.getElementsByClassName("opt-right")[0];
         let optR02 = document.getElementsByClassName("opt-right")[1];
         let optR03 = document.getElementsByClassName("opt-right")[2];

@@ -1,6 +1,10 @@
 # TWmeme
 0.1.15 (2023.02.19)
 #修改
+-修改 RWD index-allmeme overflow: hidden、history透明1
+
+0.1.15 (2023.02.19)
+#修改
 -修改 RWD test、nav加github
 
 0.1.14 (2023.02.19)

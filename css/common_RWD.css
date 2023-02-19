@@ -58,7 +58,7 @@
     .footer_bottom p{
         text-align: center;
         margin: 20px;
-        padding: 0 40px;
+        padding: 0 20px;
     }
     /* ============ about ============== */
     /* 迷因介紹 */
@@ -145,8 +145,11 @@
         font-size: .8rem;
     }
     /* 這裡總有一款屬於你的菜 */
+    .index-allmeme{
+        overflow: hidden;
+    }
     .index-allmeme h2{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     #left-img-02{
         justify-content: center;
@@ -182,7 +185,7 @@
     .bottom_gif a{
         width: 250px;
         height: 195px;
-        outline: 1px solid;
+        outline: 1px solid var(--black-color);
     }
     .bottom_gif a:not(:last-child){
         margin: 0px 0px 20px 0px;
@@ -217,6 +220,10 @@
     .main-introduce .introduce-right::after{
         height: 80%;
         top: 90px;
+    }
+    /* 聯絡我 */
+    .main-contact{
+        line-height: 2rem;
     }
     /* buy me a drink */
     .buy-me{
@@ -288,6 +295,9 @@
     }
     .content{
         margin-top: 150px;
+    }
+    .content img{
+        opacity: 1;
     }
     .timeline-item{
         padding-top: 20px;

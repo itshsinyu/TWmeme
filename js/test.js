@@ -45,15 +45,13 @@ window.addEventListener( "load" , function (){
     let q05 = this.document.getElementById("q05");
     let result = this.document.getElementById("result");
     let mainTest = this.document.getElementsByClassName("main-test")[0];
-    console.log(q02);
+    // console.log(q02);
     
     this.document.getElementById("next-01").addEventListener("click", function(){
-        console.log("123");
         q02.classList.remove("hide");
         q01.classList.add("hide");
     });
     this.document.getElementById("next-02").addEventListener("click", function(){
-        console.log("123");
         q03.classList.remove("hide");
         q02.classList.add("hide");
     });
@@ -89,20 +87,50 @@ window.addEventListener( "load" , function (){
     sharebtn.addEventListener("click", function(){
         socialdiv.classList.toggle("hide");
     })
+    // top-left pics 成癮指數
+    let topl01 = this.document.getElementById("topl01");
+    let topl02 = this.document.getElementById("topl02");
+    let topl03 = this.document.getElementById("topl03");
+    // top-right test
+    let topr01 = this.document.getElementsByClassName("top-right")[0];
+    let topr02 = this.document.getElementsByClassName("top-right")[1];
+    let topr03 = this.document.getElementsByClassName("top-right")[2];
+    // bottom-right pics 吉卜力
+    let bottomr01 = this.document.getElementsByClassName("bottom-right")[0];
+    let bottomr02 = this.document.getElementsByClassName("bottom-right")[1];
+    let bottomr03 = this.document.getElementsByClassName("bottom-right")[2];
+    // bottom-left right&wrong
+    let wrong01 = this.document.getElementsByClassName("wrong")[0];
+    let wrong02 = this.document.getElementsByClassName("wrong")[1];
+    let right01 = this.document.getElementsByClassName("right")[0];
+    // console.log(right01)
 
-    // 分數
+    // 成績單
     document.getElementById("next-05").addEventListener("click", function () {
-
+        
         let total = document.getElementsByTagName("input");
         let grade = 0;
-        console.log(total)
-        for(var i=0; i<total.length; i++){
-            console.log(total[i].value)
+
+        let rightimg = document.createElement("img");
+        let wrongimg = document.createElement("img");
+        rightimg.src="../images/test/right.png";
+        wrongimg.src="../images/test/wrong.png";
+        let num = document.getElementsByClassName("bottom-left-num");
+        
+        for(let i=0; i<total.length; i++){
             if(total[i].value == "right"){
+                console.log(total[i].value)
                 if(total[i].checked){
                     grade += 20;
+                    num[i].appendChild(rightimg);
                 }
             }
+        }
+        // console.log(total)
+        for(let index=0; index<num.length; index++){
+            console.log(num[index]);
+            // if(total[].value == "right"){
+            // }
         }
         // console.log(grade)
         switch (grade) {
@@ -111,18 +139,31 @@ window.addEventListener( "load" , function (){
                 alert('您的分數為:'+ grade +'分');
                 result.classList.remove("hide");
                 mainTest.classList.add("hide");
+                bottomr03.classList.remove("hide");
+                bottomr01.classList.add("hide");
+
                 break;
             case 40:
             case 60:
                 alert('您的分數為:'+ grade +'分');
                 result.classList.remove("hide");
                 mainTest.classList.add("hide");
+                topl03.classList.add("hide");
+                topl02.classList.remove("hide");
+                topr02.classList.remove("hide");
+                topr03.classList.add("hide");
+                bottomr02.classList.remove("hide");
+                bottomr01.classList.add("hide");
                 break;
             case 80:
             case 100:
                 alert('您的分數為:'+ grade +'分');
                 result.classList.remove("hide");
                 mainTest.classList.add("hide");
+                topl03.classList.add("hide");
+                topl01.classList.remove("hide");
+                topr01.classList.remove("hide");
+                topr03.classList.add("hide");
                 break;
           }
     });

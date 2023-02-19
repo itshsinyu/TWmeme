@@ -202,10 +202,14 @@ input:checked + label{
 }
 .top-left .scores{
     height: 130px;
-    display: block;
-    object-fit: contain;
     border: 5px solid var(--black-color);
     background-color: var(--yellow-color);
+}
+.top-left .scores img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 .top-right{
     background-color: var(--yellow-color);
@@ -237,8 +241,15 @@ input:checked + label{
     opacity: 0.2;
 }
 .bottom-right{
+    /* width: 100%; */
     border: 5px solid var(--black-color);
     border-bottom-right-radius: 10px;
+}
+.bottom-right img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .bottom-left{
     background-color: var(--yellow-color);
@@ -248,6 +259,7 @@ input:checked + label{
 .bottom-left h2{padding-bottom: 5px;}
 .bottom-left li{
     display: flex;
+    align-items: top;
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--black-color);
@@ -257,17 +269,31 @@ input:checked + label{
 }
 .bottom-left li span{
     outline: 1px solid;
-    display: inline-block;
-    min-width: 80px;
+    display: block;
+    /* width: 130px; */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
-
+.bottom-left li span img{
+    height: 100%;
+    width: 100%;
+    width: 30px;
+    object-fit: contain; 
+}
 .bottom-left li span:hover{
     color: var(--white-color);
     cursor: pointer;
 }
-.bottom-left li img{
-    max-width: 20px;
-    object-fit: contain;
+.bottom-left li .ans{
+    /* outline: 1px solid; */
+    /* width: 30px; */
+}
+.bottom-left li .ans img{
+    /* height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain; */
 
 }
 /* icons */

@@ -13,15 +13,16 @@
         flex-direction: column;
         position: fixed;
         right: 0px;
-        top: 70px;
+        top: 69px;
         z-index: 20;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 69px);
         background-color: var(--yellow-color);
-        opacity: .9;
+        opacity: .95;
         display: none;
     }
     ul.menu a{
         width: 130px;
+        width: 100vw;
     }
     .hamburger{   
         display: block;

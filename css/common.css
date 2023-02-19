@@ -42,12 +42,21 @@ header{
     max-width: 1200px;
     height: 70px;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 .logo img{
     /* outline: 1px solid red; */
     width: 150px;
     margin: 15px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.github img{
+    width: 30px;
+    /* outline: 1px solid; */
 }
 ul.menu{
     display: flex;

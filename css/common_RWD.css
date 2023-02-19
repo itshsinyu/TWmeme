@@ -362,18 +362,19 @@
         font-size: 1.2rem;
         font-weight: 900;
         line-height: 1.8rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .top-right img{
         left: 0px;
     }
     .bottom-right{
-        height: 230px;
+        height: 300px;
         object-fit: cover;
     }
     .bottom-left li{
-        margin: 10px 10px;
+        margin: 10px auto;
         font-size: 1rem;
+        width: 100px;
     }
     .bottom-right{
         min-width: 200px;

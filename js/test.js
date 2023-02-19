@@ -15,9 +15,9 @@ window.addEventListener( "load" , function (){
     let opt05 = this.document.getElementsByClassName("options")[4];
     let checked05 = this.document.getElementsByClassName("checked")[4];
     let from05 = this.document.getElementsByClassName("from")[4];
-    // console.log(opt05);
+
     opt01.addEventListener("click", function(){
-        console.log("123");
+        // console.log("123");
         checked01.classList.remove("hide");
         from01.classList.remove("hide");
     })

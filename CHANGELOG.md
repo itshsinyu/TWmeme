@@ -1,4 +1,8 @@
 # TWmeme
+0.1.20 (2023.02.20)
+#修改
+-修改 RWD History 我沒了放大、years位置
+
 0.1.19 (2023.02.20)
 #修改
 -修改 RWD history年份太大 拿掉sticky

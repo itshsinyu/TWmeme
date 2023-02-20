@@ -134,7 +134,7 @@ main{
 /* end 我沒了 */
 .end{
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     position: relative;
 }
 .end > span{
@@ -143,6 +143,6 @@ main{
     padding: 10px 20px;
     position: absolute;
     margin-top: 80px;
-    left: 46.25%;
+    left: calc(50% - 70px);
     letter-spacing: 1px;
 }

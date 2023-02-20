@@ -121,6 +121,13 @@
     main .main-tag{
         width: 60%;
     }
+    /* ============ history ============== */
+    .timeline-item:nth-child(even) > .year{
+        left: calc(10% - 30px );
+    }
+    .timeline-item:nth-child(odd) > .year{
+        right: calc(10% - 30px);
+    }
 }
 /* iPhone XR */
 @media screen and (max-width:414px){

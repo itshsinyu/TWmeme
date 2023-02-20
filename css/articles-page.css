@@ -58,6 +58,8 @@ main{
 }
 .share img{
     margin-left: 8px;
+    width: 100%;
+    display: block;
 }
 /*  author */
 .author{

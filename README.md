@@ -5,7 +5,8 @@
 
 此專案也是我首次 html、css、js 練習作品（不定期更新）
 
-- [網站DEMO連結點我](https://itshsinyu.github.io/TWmeme/index.html)
+- [網站 DEMO 點我](https://itshsinyu.github.io/TWmeme/index.html)
+- [網站 Wireframe Mockup 點我](https://www.figma.com/file/1derYbqoIkmEsijKY4ImVO/TWmeme?node-id=74%3A215&t=VkcdrjBjAVDLfLLb-1)
 
 ## 專案技術
 - HTML

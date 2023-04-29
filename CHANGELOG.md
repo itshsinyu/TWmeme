@@ -1,4 +1,8 @@
 # TWmeme
+0.1.26 (2023.04.30)
+#修改
+- 影片加上lazyloading
+
 0.1.25 (2023.04.29)
 #修改
 - Readme 加上 Wireframe Mockup

@@ -94,65 +94,15 @@ ul.menu > li >a:hover{
     right: 0;
     z-index: 1;
 }
-/* 背後文字 bg loop */
-.banner-loop{
-    position: relative;
-    height: 66vh;
-    width: 100%;
-}
-.loop-list.is-bgloop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.loop-list.is-bgloop .bg-line {
-    animation: bgLoop 40s linear infinite;
-}
-@keyframes bgLoop{ 0%{ background-position: 0 0; } }
-.loop-list{
-    position: absolute;
-    top: 10px;bottom: 0;left: 0;right: 0;
-}
-.bg-line{
-    opacity: 0.2;
-    /* 圖片高度除2 */
-    height: 52px;
+/* 背後文字改純文字 */
+.banner-loop .loopline{
+    font-size: 46px;
+    line-height: 62px;
+    opacity: .2;
+    border: 0px;
     margin-bottom: 10px;
-    background-size: auto 100%;
-    background-repeat: repeat-x;
+    font-weight: 500;
 }
-.bg-line.line01{background-image: url(../images/scroll/line01.png);
-    background-position: -2930px 0;
-    /* 寬度除2 */
-}
-.bg-line.line02{background-image: url(../images/scroll/line02.png);
-    background-position: -2710px 0;
-}
-.bg-line.line03{background-image: url(../images/scroll/line03.png);
-    background-position: -2850px 0;
-}
-.bg-line.line04{background-image: url(../images/scroll/line04.png);
-    background-position: -2710px 0;
-}
-.bg-line.line05{background-image: url(../images/scroll/line05.png);
-    background-position: -2500px 0;
-}
-.bg-line.line06{background-image: url(../images/scroll/line06.png);
-    background-position: -3100px 0;
-}
-.bg-line.line07{background-image: url(../images/scroll/line07.png);
-    background-position: -3200px 0;
-}
-.bg-line.line08{background-image: url(../images/scroll/line08.png);
-    background-position: -2550px 0;
-}
-.bg-line.line09{background-image: url(../images/scroll/line09.png);
-    background-position: -3100px 0;
-}
-.bg-line.line10{background-image: url(../images/scroll/line10.png);
-    background-position: -2700px 0;
-}
-
 /* ======= 今晚我想來點 ======= */
 .tonight{
     padding: 20px 0;
